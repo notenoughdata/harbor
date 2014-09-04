@@ -13,22 +13,22 @@
       <ul class="nav navbar-nav">
         <li><%= image_tag "harborside.png" %></li> 
           <li class="dropdown top-nav">
-          <a href class="dropdown-toggle" data-toggle="dropdown">EXPLORE</a>
+          <a href class="dropdown-toggle" data-toggle="dropdown">Explore</a>
           <ul class="dropdown-menu" role="menu">
-            <li class="dropwdown-menu-item"><%= link_to "Art", explore_art_path %></li>
-            <li class="dropwdown-menu-item"><%= link_to "Music", explore_music_path %></li>
-            <li class="dropwdown-menu-item"><%= link_to "Food", explore_food_path %></li>
-            <li class="dropwdown-menu-item"><%= link_to "People", explore_people_path %></li>
-            <li class="dropwdown-menu-item"><%= link_to "Press", explore_press_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "Art", explore_art_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "Music", explore_music_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "Restaurant", explore_restaurant_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "People", explore_people_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "Press", explore_press_path %></li>
           </ul>
         </li>
         <li class="dropdown top-nav">
           <a href class="dropdown-toggle" data-toggle="dropdown">Lease Now</a>
           <ul class="dropdown-menu" role="menu">
-            <li class="dropwdown-menu-item"><%= link_to "Office", lease_office_path %></li>
-            <li class="dropwdown-menu-item"><%= link_to "NYC Views", lease_views_path %></li>
-            <li class="dropwdown-menu-item"><%= link_to "Retail", lease_retail_path %></li>
-            <li class="dropwdown-menu-item"><%= link_to "Incentives", lease_incentives_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "Office", lease_office_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "NYC Views", lease_views_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "Retail", lease_retail_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "Incentives", lease_incentives_path %></li>
           </ul>
         </li> 
         <li class="top-nav" ><%= link_to "Live Now", live_index_path %></li>
@@ -42,59 +42,90 @@
       </ul>
     </div><!-- /.navbar-collapse -->
     </nav>
-<body>
 
+<!-- this is where the damn page templates get inserted -->
 
-<div class="page-wrap">
   <%= yield %>
-</div>
 
-</body>
+<!-- now we go back to global stuff -->
 
-
-  <nav class="navbar-default navbar-fixed-bottom">
+  <nav class="navbar-default navbar-bottom">
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><%= link_to "HARBORSIDE NOW", lease_index_path %></li>
-        <li class="dropdown">
-          <ul class="footer">
-
-            <li><%= link_to "LEASE NOW", lease_index_path %></li>
-            <li><%= link_to "Office", lease_office_path %></li>
-            <li><%= link_to "NYC Views", lease_views_path %></li>
-            <li><%= link_to "Retail", lease_retail_path %></li>
-            <li><%= link_to "Incentives", lease_incentives_path %></li>
-          </ul>
-        </li> 
-        <li ><%= link_to "LIVE NOW", live_index_path %></li>
-        <li ><%= link_to "ARRIVE NOW", arrive_index_path %></li>
         <li>
           <ul class="footer">
-            <li><%= link_to "EXPLORE NOW", explore_index_path %></li>
+            <li class="first"><%= link_to "Explore", explore_index_path %></li>
             <li><%= link_to "Art", explore_art_path %></li>
             <li><%= link_to "Music", explore_music_path %></li>
-            <li><%= link_to "Food", explore_food_path %></li>
+            <li><%= link_to "Restaurant", explore_restaurant_path %></li>
             <li><%= link_to "People", explore_people_path %></li>
             <li><%= link_to "Press", explore_press_path %></li>
           </ul>
         </li>
-        <li><%= link_to "CONTACT NOW", contact_index_path %></li>
-        
+        <li class="dropdown">
+          <ul class="footer">
+            <li class="first"><%= link_to "Happening", happening_index_path %></li>
+            <li><%= link_to "Event Calendar", happening_event_path %></li>
+            <li><%= link_to "Instagram", happening_instagram_path %></li>
+            <li><%= link_to "Pinterest", happening_pinterest_path %></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="footer">
+            <li class="first"><%= link_to "Harborside Now", harborside_index_path %></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <ul class="footer">
+            <li class="first"><%= link_to "Live", live_index_path %></li>
+            <li><%= link_to "URL®", live_url_path %></li>
+            <li><%= link_to "Retail", live_retail_path %></li>
+          </ul>
+        </li> 
+        <li class="dropdown">
+          <ul class="footer">
+            <li class="first"><%= link_to "Arrive", arrive_index_path %></li>
+            <li><%= link_to "Overview", arrive_overview_path %></li>
+            <li><%= link_to "Modes", arrive_modes_path %></li>
+            <li><%= link_to "Your trip here", arrive_trip_path %></li>
+          </ul>
+        </li> 
+        <li class="dropdown">
+          <ul class="footer">
+            <li class="first"><%= link_to "Lease", lease_index_path %></li>
+            <li><%= link_to "Office", lease_office_path %></li>
+            <li><%= link_to "Retail", lease_retail_path %></li>
+            <li><%= link_to "Amenities", lease_amenities_path %></li>
+            <li><%= link_to "NYC Views", lease_views_path %></li>
+            <li><%= link_to "Incentives", lease_incentives_path %></li>
+            <li><%= link_to "Connectivity", lease_connectivity_path %></li>
+            <li><%= link_to "Demographics", lease_demographics_path %></li>
+            <li><%= link_to "Plans/Tools", lease_plans_path %></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="footer">
+            <li class="first"><%= link_to "Contact", contact_index_path %></li>
+          </ul>
+        </li>        
       </ul>
       <ul class="navbar-right nav navbar-nav social-nav">
-       <li class="social">SOCIAL</li>
-       <li><%= link_to (image_tag "icon-facebook.png"), "https://www.facebook.com/MackCaliRC" %></li>
-       <li><%= link_to (image_tag "icon-twitter.png"), "https://twitter.com/MackCaliProp" %></li>
-       <li><%= link_to (image_tag "icon-plus.png"), "https://plus.google.com/111389280462388744063/posts " %></li>
-       <li><%= link_to (image_tag "icon-instagram.png"), "http://instagram.com/harborsidejc
-" %></li>
-       <li><%= link_to (image_tag "icon-linkedin.png"), "https://www.linkedin.com/company/104717?trk=tyah&trkInfo=tarId%3A1409705871606%2Ctas%3Amack-cali%2Cidx%3A2-1-6" %></li>
+       <!-- <li class="social">Social</li> -->
+       <li class="first"><%= link_to (image_tag "icons/fb.png"), "https://www.facebook.com/MackCaliRC" %></li>
+       <li><%= link_to (image_tag "icons/tw.png"), "https://twitter.com/MackCaliProp" %></li>
+       <li><%= link_to (image_tag "icons/g.png"), "https://plus.google.com/111389280462388744063/posts " %></li>
+       <li><%= link_to (image_tag "icons/in.png"), "http://instagram.com/harborsidejc" %></li>
+       <li><%= link_to (image_tag "icons/li.png"), "https://www.linkedin.com/company/104717?trk=tyah&trkInfo=tarId%3A1409705871606%2Ctas%3Amack-cali%2Cidx%3A2-1-6" %></li>
        <!-- <li><%= link_to (image_tag "icon-tumblr.png"), "" %></li> -->
-       <li><%= link_to (image_tag "icon-pintrest.png"), "http://www.pinterest.com/harborsidejc/be-here-now/
-" %></li>
+       <li><%= link_to (image_tag "icons/pi.png"), "http://www.pinterest.com/harborsidejc/be-here-now/" %></li>
 
 
       </ul>
+      <div class="fineprint">
+        <p>© 2014 Mack-Cali Realty Corporation. All Rights Reserved.</p>
+        <p><%= link_to "Terms of Service", home_terms_path %> | <%= link_to "Privacy Policy", home_privacy_path %></p>
+       <li><%= link_to (image_tag "mack-cali.png"), "http://www.mack-cali.com" %></li>
+
     </div><!-- /.navbar-collapse -->
     </nav>
 

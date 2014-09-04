@@ -4,7 +4,6 @@ $navbar-default-link-color: white;
 $navbar-default-link-hover-color: white;
 
 
-
 .navbar-default {
     background-color: grey;
     border-color: grey;
@@ -34,7 +33,7 @@ $navbar-default-link-hover-color: white;
   }
 }
 
-.navbar-fixed-bottom{
+.navbar-fixed-bottom, .navbar-bottom{
   background-color: black;
 
 }
@@ -42,9 +41,16 @@ $navbar-default-link-hover-color: white;
 
 
 .navbar-nav {
+  font-size: 17px;
+  li {
+    text-transform: uppercase;
+    a {
+      padding:15px 0px;
+    }
+  }
   li.top-nav {
     a {
-     padding: 0;
+     padding: 0px;
      margin-top: 75px;
      margin-left: 15px;
     }

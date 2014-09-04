@@ -16,7 +16,7 @@ class ExploreController < ApplicationController
   end
   
 
-  def food
+  def restaurant
   end
   
 end
