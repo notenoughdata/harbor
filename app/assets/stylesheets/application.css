@@ -102,6 +102,5 @@ li.social {
   mask: url(masks/top.svg#logo_mask);
   /* *** For webkit use -webkit-mask-image *** */
   -webkit-mask-image: url(masks/top.svg);
-  mask-image: url(masks/top.svg);
 
 }
