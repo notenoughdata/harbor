@@ -57,29 +57,51 @@ ul.footer li a:hover {
   text-decoration: none;
 }
 
-ul.social-nav li a{
- /*padding-left: 5px;
- padding-right: 5px;*/
-}
-
 li.social {
   padding-top: 15px;
   color: white;
   font-family: "GoLongRegular";  
 }
 
-.fineprint {
+#social {
+  float:right;
+}
+
+#social .social-nav {
+  float: none !important;
+  padding-right: 0px;
+}
+
+#social .social-nav li {
   float: right;
+}
+
+#social .fineprint {
+  margin-top:0px;
   text-align: right;
   line-height: .5;
-  padding-right: 25px;
-}
-.fineprint, .fineprint a {
   color:white;
   font-size: 10px;
 }
+.fineprint a {
+  color:white;
+  text-decoration: underline;
+}
+
 
 .dropdown-menu-item {
   padding: 0;
   margin: 0;
+}
+
+
+.top-mask {
+  /* *** For Firefox use mask *** */
+  /* *** Note that we use an ID selector here #logo_mask  *** */
+  /* *** which is the same as the ID we defined in the SVG mask *** */
+  mask: url(masks/top.svg#logo_mask);
+  /* *** For webkit use -webkit-mask-image *** */
+  -webkit-mask-image: url(masks/top.svg);
+  mask-image: url(masks/top.svg);
+
 }

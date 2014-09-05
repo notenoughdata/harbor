@@ -3,15 +3,20 @@
 $navbar-default-link-color: white;
 $navbar-default-link-hover-color: white;
 
+.navbar {
+  margin-bottom:0px;
+  border-radius:0px;
+  border:0px;
+}
 
 .navbar-default {
-    background-color: grey;
-    border-color: grey;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .navbar-default ul.dropdown-menu{
-    background-color: grey;
-    border-color: white;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .navbar-fixed-bottom ul{
@@ -49,10 +54,10 @@ $navbar-default-link-hover-color: white;
     }
   }
   li.top-nav {
+     margin-top: 75px;
     a {
      padding: 0px;
-     margin-top: 75px;
-     margin-left: 15px;
+     margin-left: 10px;
     }
   }
 
@@ -65,14 +70,6 @@ $navbar-default-link-hover-color: white;
     }
   }
 }
-
-
-
-
-
-
-
-
 
 
 
