@@ -16,3 +16,4 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery.royalslider.js
+//= require skrollr.min.js

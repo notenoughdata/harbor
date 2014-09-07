@@ -2,13 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body.live { 
-	background-color:#000;
+	// background-color:#000;
 	#live-0, #live-1, #live-3, #full-width-slider {
 	  width: 100%;
 	  color: #000;
 	}
-	.rsOverflow {
-		// margin-top: -25px;
+	#live-1 .rsOverflow {
+		margin-top: -100px;
 	}
 	.coloredBlock {
 	  padding: 12px;

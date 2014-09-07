@@ -3,6 +3,12 @@
 $navbar-default-link-color: white;
 $navbar-default-link-hover-color: white;
 
+body {
+  background-color: #343434;
+}
+.container {
+  padding:0;
+}
 .navbar {
   margin-bottom:0px;
   border-radius:0px;
@@ -120,7 +126,52 @@ ul.dropdown-menu {
 
 
 
+@media (min-width: 768px) {
+  .brand a img {
+    margin:15px 0 0 0;
+    width:180px;
+  }
+  .navbar-nav {
+    li.top-nav {
+      margin-top: 85px;
+      padding:3px 5px 2px 5px;
+    }
+  }
+}
 
+@media (min-width: 992px) {
+  .brand a img {
+    margin:0 50px 0 -50px;
+    width:100%;
+  }
+  .navbar-nav {
+  li {
+    text-transform: uppercase;
+    a {
+    }
+  }
+  li.top-nav {
+    // margin-top: 84px;
+    font-size: 18px;
+    border: 2px;
+    border-color: transparent;
+    border-style: solid;
+    padding:3px 10px 2px 10px;
+    a {
+     padding:0px;
+     margin:0px;
+     font-size: 18px;
+    }
+  }
+  li.top-nav:hover {
+    border:2px solid #969696;
+    background-color: #000;
+    a {
+      color:#fff;
+    }
+  }
+}
+}
 
 
 

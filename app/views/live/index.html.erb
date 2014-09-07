@@ -3,15 +3,19 @@
 	<!-- <h1>Lease#index</h1>
 	<p>Find me in app/views/lease/index.html.erb</p> -->
 
-	<div id="live-0" class="royalSlider heroSlider rsMinW">
+	<div id="live-0" class="royalSlider heroSlider rsMinW" data-speed="200">
 	  <div class="rsContent rsNoDrag">
 	  	<%= image_tag "full-width/live-0.jpg", :class=>"rsImg" %>
-	    </div>
+		  	<div class="infoBlock infoBlockLeftBlack" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="400">
+		      <h4>The Future is Now</h4>
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+		    </div>
+    	</div>
 	</div>
 	<div id="live-1" class="royalSlider heroSlider rsMinW">
-	  <div class="rsContent rsNoDrag">
-	  	<%= image_tag "full-width/live-1.jpg", :class=>"rsImg top-mask" %>
-	    </div>
+		<div class="rsContent rsNoDrag">
+		  	<%= image_tag "full-width/live-1.jpg", :class=>"rsImg top-mask" %>
+		</div>
 	</div>
 	<div id="full-width-slider" class="royalSlider heroSlider rsMinW">
 	  <div class="rsContent">
@@ -41,10 +45,10 @@
 	jQuery(document).ready(function($) {
 	  $('.royalSlider').royalSlider({
 	    arrowsNav: true,
-	    loop: false,
+	    loop: true,
 	    keyboardNavEnabled: true,
 	    controlsInside: false,
-	    imageScaleMode: 'fill',
+	    imageScaleMode: 'none',
 	    arrowsNavAutoHide: false,
 	    autoScaleSlider: true, 
 	    autoScaleSliderWidth: 1920,     
@@ -59,13 +63,12 @@
 	    hasDrag: false,
 	    deeplinking: {
 	      enabled: true,
-	      change: false
+	      change: true
 	    },
 	    /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
-	    imgWidth: 960,
-	    imgHeight: 700
+	    // imgWidth: 1920,
+	    // imgHeight: 1400
 	  });
 	});
 	</script>
   
-</body>
