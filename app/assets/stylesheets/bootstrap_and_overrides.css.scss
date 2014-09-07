@@ -7,6 +7,7 @@ $navbar-default-link-hover-color: white;
   margin-bottom:0px;
   border-radius:0px;
   border:0px;
+  text-align: center;
 }
 
 .navbar-default {
@@ -14,9 +15,13 @@ $navbar-default-link-hover-color: white;
     border-color: transparent;
 }
 
-.navbar-default ul.dropdown-menu{
-    background-color: transparent;
-    border-color: transparent;
+.navbar-fixed-top, .navbar-static-top {
+  background-image: url(nav-bg.png);
+  background-repeat: repeat-x;
+  height: 178px;
+}
+.navbar-static-top {
+  margin-bottom: -178px;
 }
 
 .navbar-fixed-bottom ul{
@@ -29,6 +34,8 @@ $navbar-default-link-hover-color: white;
 }
 
 .navbar-default .navbar-nav { 
+  display: inline-block;
+  float: none;
   li { 
 
     a {
@@ -50,23 +57,54 @@ $navbar-default-link-hover-color: white;
   li {
     text-transform: uppercase;
     a {
-      padding:15px 0px;
     }
   }
   li.top-nav {
-     margin-top: 75px;
+    margin-top: 84px;
+    font-size: 18px;
+    border: 2px;
+    border-color: transparent;
+    border-style: solid;
+    padding:6px 10px 2px 10px;
     a {
-     padding: 0px;
-     margin-left: 10px;
+     padding:0px;
+     margin:0px;
     }
   }
-
+  li.top-nav:hover {
+    border:2px solid #969696;
+    background-color: #000;
+    a {
+      color:#fff;
+    }
+  }
+}
+.navbar-default .navbar-nav > .open {
+  border:2px solid white;
+  background-color: #000;
+}
+.navbar-nav li.open:hover {
+  border: 2px solid #fff;
 }
 
-.dropdown-menu {
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent;
+  color:#fff;
+}
+
+ul.dropdown-menu {
+  border:2px solid white;
+  background-color:#000;
+  box-shadow: 0px 0px 0px 0px !important;
+  margin:-2px 0 0 -2px;
+  border-radius:0px;
+  text-align: left;
   li {
     a {
       margin: 0;
+      margin-left:10px !important;
     }
   }
 }
