@@ -109,7 +109,14 @@ ul.dropdown-menu {
   }
 }
 
-
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: transparent !important;
+}
+.dropdown-menu > li:hover, .dropdown-menu > li:focus {
+  background-image: url(icons/caret.png);
+  background-repeat: no-repeat;
+  background-position: left 2px;
+}
 
 
 
