@@ -16,3 +16,5 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery.royalslider.js
+//= require jquery.imageMask.js
+//= require parallax.js
