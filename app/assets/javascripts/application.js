@@ -16,4 +16,9 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery.royalslider.js
+<<<<<<< HEAD
 //= require skrollr.min.js
+=======
+//= require jquery.imageMask.js
+//= require parallax.js
+>>>>>>> FETCH_HEAD
