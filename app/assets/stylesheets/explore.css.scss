@@ -143,8 +143,8 @@ body.explore {
 		}
 	}
 	.videoBlockSmall {
-		width:442px;
-		float: left;
+		width:425px;
+		float: right;
 		margin-right:10px;
 	}
 
@@ -197,4 +197,45 @@ body.explore {
 	     line-height: 17px;
 	  }
 	}
+	
+.articleBlock {
+	height: 200px;
+	background: url(koBG.png) repeat;
+  padding:10px 10px 0 10px;
+  border:1px solid #fff;
+  margin-right: 25px;
 }
+
+.articleDiv {
+	padding-top: 30px;
+}
+
+.videoBio {
+	height: 100px;
+	background: url(koBG.png) repeat;
+	 border-top:1px solid #fff;
+
+	 p 	{
+	 	font-size: 14px;
+	 	text-align: left;
+	 }
+}
+
+.videoBlockSmall {
+	margin-top: 20px;
+	margin-right:50px;
+	background: url(koBG.png) repeat;
+  border:1px solid #fff;
+}
+
+.videoCol {
+	:first-child{
+		margin-right: 0;
+	}
+
+}
+
+
+}
+
+
