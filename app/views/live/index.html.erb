@@ -14,26 +14,26 @@
 	</div>
 	<div id="live-1" class="royalSlider heroSlider rsMinW">
 		<div class="rsContent rsNoDrag">
-		  	<%= image_tag "full-width/live-1.jpg", :class=>"rsImg top-mask" %>
+		  	<%= image_tag "full-width/live-1.jpg", :class=>"rsImg mySelector" %>
 		</div>
 	</div>
 	<div id="full-width-slider" class="royalSlider heroSlider rsMinW">
 	  <div class="rsContent">
-	  	<%= image_tag "full-width/live-2-01.png", :class=>"rsImg" %>
+	  	<%= image_tag "full-width/live-2-01.jpg", :class=>"rsImg" %>
 	    <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
 	      <h4>The Future is Now</h4>
 	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
 	    </div>
 	  </div>
 	  <div class="rsContent">
-	  	<%= image_tag "full-width/live-2-02.png", :class=>"rsImg" %>
+	  	<%= image_tag "full-width/live-2-02.jpg", :class=>"rsImg" %>
 	     <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
 	      <h4>This is a static HTML block</h4>
 	      <p>It's always displayed and not animated by slider.</p>
 	    </div>
 	  </div>
 	 <div class="rsContent">
-	  	<%= image_tag "full-width/live-2-03.png", :class=>"rsImg" %>
+	  	<%= image_tag "full-width/live-2-03.jpg", :class=>"rsImg" %>
 	    <div class="infoBlock rsABlock infoBlockLeftBlack" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
 	      <h4>You can link to this slide by adding #3 to url.</h4>
 	      <p><a href="http://dimsemenov.com/plugins/royal-slider/gallery-with-deeplinking/">Learn more</a></p>
@@ -71,4 +71,10 @@
 	  });
 	});
 	</script>
-  
+      <script type="text/javascript">
+        $( document ).ready( function() {
+            $( ".mySelector" ).imageMask( "/assets/masks/mask2.png", function( $canvas ) {
+                console.log( 'imageMask successfully applied', $canvas );
+            } );
+        } );
+    </script>

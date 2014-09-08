@@ -68,4 +68,10 @@
 	});
 	</script>
   
-</body>
+    <script type="text/javascript">
+        $( document ).ready( function() {
+            $( ".mySelector" ).imageMask( "/assets/masks/mask2.png", function( $canvas ) {
+                console.log( 'imageMask successfully applied', $canvas );
+            } );
+        } );
+    </script>
