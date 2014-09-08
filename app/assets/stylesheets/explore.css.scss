@@ -8,76 +8,120 @@ body.explore {
 	  width: 100%;
 	  color: #000;
 	}
-	// all the text blocks below are placeholder and only viewable on live/url 
-	.coloredBlock {
-	  padding: 12px;
-	  background: rgba(255,0,0,0.6);
-	  color: #FFF;
-	   width: 200px;
-	   left: 20%;
-	   top: 5%;
-	}
+
+	// for the first slider on explore page
 	.infoBlock {
-	  position: absolute;
-	  top: 30px;
-	  right: 30px;
-	  left: auto;
-	  max-width: 35%;
-	  padding-bottom: 0;
-	  // background: #FFF;
-	  // background: rgba(255, 255, 255, 0.8);
-	  overflow: hidden;
-	  padding: 20px;
-	}
-	.infoBlockLeftBlack {
+	  width: 100%;
+	  padding: 120px;
 	  color: #FFF;
-	  left: 50%;
-	  right: auto;
 	}
-	.infoBlock h4 {
+	.infoBlock h1 {
+		font-family: "GoLongRegular"; 
+		text-transform: uppercase;
+		font-size: 120px;
+		margin: 150px 0 0 0;
+	  letter-spacing: -2px;
+	  font-stretch: condensed;
 	  line-height: 1.2;
-	  margin: 0;
-	  font-family: "GoLongRegular"; 
-	  text-transform: uppercase;
-	  font-size: 50px;
-	  letter-spacing: -1px;
-	  background: #000;
-	  background: rgba(0,0,0,0.75);
-	  border:2px solid #fff;
-	  padding:5px;
+	  padding-bottom: 3px;
 	  text-align: center;
 	}
 	.infoBlock p {
-	  font-size: 16px;
-	  line-height: 1.2;
-	  font-family: "Museo";
-	  margin:-2px 0 0 80px;
-	  background: #000;
-	  background: rgba(0,0,0,0.75);
-	  border:2px solid #fff;
-	  padding:10px;
+		font-size: 24px;
+		line-height: .9em;
+		font-weight: bold;
+		margin: 4px 0 0;
+		font-family: "Museo";
+		text-transform: uppercase;
+		padding-bottom: 3px;
+		text-align: center;
 	}
 	.infoBlock a {
 	  color: #FFF;
 	  text-decoration: underline;
+	  text-align: center;
+	  width: 100%;
 	}
-	.photosBy {
+
+	// second slider on explore page
+	.artBlock {
 	  position: absolute;
-	  line-height: 24px;
-	  font-size: 12px;
-	  background: #FFF;
-	  color: #000;
-	  padding: 0px 10px;
-	  position: absolute;
-	  left: 12px;
-	  bottom: 12px;
-	  top: auto;
-	  border-radius: 2px;
-	  z-index: 25; 
-	} 
-	.photosBy a {
-	  color: #000;
+	  margin:0 auto;
+	  // background: #FFF;
+	  // background: rgba(255, 255, 255, 0.8);
+	  overflow: hidden;
+	  color: #FFF;
+		width: 100%;
+		left:200px;
+		top:200px;
+		max-width: 900px;
 	}
+	h4 {
+	  font-family: "GoLongRegular"; 
+	  text-transform: uppercase;
+	  font-size: 60px;
+	  letter-spacing: -1px;
+	  line-height: 1.5em;
+	  margin:0px;
+	}
+			/*type*/
+	h4 i {
+	    background: url(koBG.png) repeat;
+	    padding:10px 10px 0 10px;
+	    border:1px solid #fff;
+	  }
+	.artBlock {
+		p {
+			margin-left:10px;
+		}
+		p, ul {
+		  font-size: 24px;
+		  line-height: 1;
+		  font-family: "Museo";
+		  text-transform: uppercase;
+		  font-weight: bold;
+		}
+	}
+	.artBlock a {
+	  color: #28bee8;
+	  text-decoration: underline;
+	  :hover {
+	  	text-decoration: underline;
+	  }
+	}
+	.listingsBlock {
+	  margin:20px 0 0 15px;
+	  padding: 5px 0px 0px 10px;
+	  background: url(koBG.png) repeat;
+	  width:500px;
+	    border:1px solid #fff;
+		p, ul {
+		  font-size: 15px;
+		  line-height: 1;
+		  font-family: "Museo";
+		  text-transform: none;
+		}
+		p {
+		  margin:0 0 5px 0;
+		}
+		ul {
+			margin:5px 0 10px 20px;	
+		}
+	}
+	.festivals {
+		a {
+			text-transform: uppercase;
+		}
+	}
+	.artBlock a {
+	  color: #28bee8;
+	  text-decoration: underline;
+	  :hover {
+	  	text-decoration: underline;
+	  }
+	}
+
+
 	.fullWidth {
 	  max-width: 1920px;
 	  margin: 0 auto 24px;
@@ -86,14 +130,14 @@ body.explore {
 	@media screen and (min-width:960px) and (min-height:660px) {
 	  .heroSlider .rsOverflow,
 	  .royalSlider.heroSlider {
-	      height: 700px !important;
+	      height: 800px !important;
 	  }
 	}
 
 	@media screen and (min-width:960px) and (min-height:1000px) {
 	    .heroSlider .rsOverflow,
 	    .royalSlider.heroSlider {
-	        height: 700px !important;
+	        height: 1000px !important;
 	    }
 	}
 	@media screen and (min-width: 0px) and (max-width: 800px) {
