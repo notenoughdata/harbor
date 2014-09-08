@@ -25,11 +25,11 @@
           <a href class="dropdown-toggle" data-toggle="dropdown">Explore</a>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Explore Now", explore_index_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Art", explore_art_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Music", explore_music_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Restaurant", explore_restaurant_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "People", explore_people_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Press", explore_press_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "Art",explore_index_path(:anchor => "Art") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Music", explore_index_path(:anchor => "Music") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Restaurant", explore_index_path(:anchor => "Food") %></li>
+            <li class="dropdown-menu-item"><%= link_to "People", explore_index_path(:anchor => "People") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Press", explore_index_path(:anchor => "Press") %></li>
           </ul>
         </li>
         <li class="dropdown top-nav">
@@ -91,11 +91,11 @@
         <li class="dropdown">
           <ul class="footer">
             <li class="first"><%= link_to "Explore", explore_index_path %></li>
-            <li><%= link_to "Art", explore_art_path %></li>
-            <li><%= link_to "Music", explore_music_path %></li>
-            <li><%= link_to "Restaurant", explore_restaurant_path %></li>
-            <li><%= link_to "People", explore_people_path %></li>
-            <li><%= link_to "Press", explore_press_path %></li>
+            <li><%= link_to "Art", explore_index_path(:anchor => "Art") %></li>
+            <li><%= link_to "Music", explore_index_path(:anchor => "Music") %></li>
+            <li><%= link_to "Restaurant", explore_index_path(:anchor => "Food") %></li>
+            <li><%= link_to "People", explore_index_path(:anchor => "People") %></li>
+            <li><%= link_to "Press", explore_index_path(:anchor => "Press") %></li>
           </ul>
         </li>
         <li class="dropdown">
