@@ -3,13 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body.live { 
 	// background-color:#000;
-	#live-0, #live-1, #live-3, #full-width-slider {
+	div[id^="live-"] {
 	  width: 100%;
 	  color: #000;
 	}
-	#live-1 .rsOverflow {
-		// margin-top: -100px;
-	}
+	// all the text blocks below are placeholder and only viewable on live/url 
 	.coloredBlock {
 	  padding: 12px;
 	  background: rgba(255,0,0,0.6);

@@ -1,1 +1,58 @@
+<body class="contact">
 
+	<div id="contact-0" class="royalSlider heroSlider rsMinW slider00">
+		<div class="rsContent rsNoDrag">
+	  		<%= image_tag "full-width/contact-0.jpg", :class=>"rsImg" %>
+	    </div>
+	</div>
+
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+	  $('.royalSlider').royalSlider({
+	    arrowsNav: true,
+	    loop: false,
+	    keyboardNavEnabled: true,
+	    controlsInside: false,
+	    imageScaleMode: 'fill',
+	    arrowsNavAutoHide: false,
+	    autoScaleSlider: true, 
+	    autoScaleSliderWidth: 1920,     
+	    autoScaleSliderHeight: 1400,
+		slidesSpacing: 0,
+	    controlNavigation: 'bullets',
+	    thumbsFitInViewport: false,
+	    navigateByClick: true,
+	    startSlideId: 0,
+	    autoPlay: false,
+	    transitionType:'move',
+	    globalCaption: false,
+	    hasDrag: false,
+	    deeplinking: {
+	      enabled: true,
+	      change: false
+	    },
+	    /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
+	    imgWidth: 1920,
+	    imgHeight: 1400
+	  });
+	});
+	</script>
+
+<!-- this is what you need to replicate for trapezoidal imageMask in ohter sections -->
+
+    <script type="text/javascript">
+        $( document ).ready( function() {
+            $( ".mySelector" ).imageMask( "/assets/masks/mask01.png", function( $canvas ) {
+                console.log( 'imageMask successfully applied', $canvas );
+            } );
+        } );
+    </script>
+
+     <script type="text/javascript">
+        $( document ).ready( function() {
+            $( ".mySelector1" ).imageMask( "/assets/masks/mask02.png", function( $canvas ) {
+                console.log( 'imageMask successfully applied', $canvas );
+            } );
+        } );
+    </script>
+ 
