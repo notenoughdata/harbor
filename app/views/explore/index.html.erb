@@ -131,9 +131,29 @@
 		    </div>
 		</div>
 	</div>
-	<div id="explore-4" class="royalSlider heroSlider rsMinW slider04">
+	<div id="explore-4" class="slider04 royalSliderTall rsMinW">
 		<div class="rsContent rsNoDrag">
-	  		<%= image_tag "full-width/explore-4.jpg", :class=>"rsImg mySelector" %>
+	  		<%= image_tag "full-width/explore-4.jpg", :class=>"rsImg mySelector1" %>
+	  		<div class="infoBlockLeftBlack rsABlock artBlock peopleBlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
+		      	<h4><i>Expore it Here NOW</i></h4>
+		      	<p>Meet the people who form the creative soul of our
+		      		community. Hear why they call Jersey City home.</p>
+				<div class="videoBlock">
+					<iframe src="//player.vimeo.com/video/72689723" width="898" height="550" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+				<div class="videoBlockSmall">
+					<iframe src="//player.vimeo.com/video/72689723" width="440" height="230" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+				<div class="videoBlockSmall">
+					<iframe src="//player.vimeo.com/video/72689723" width="440" height="230" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+				<div class="videoBlockSmall">
+					<iframe src="//player.vimeo.com/video/72689723" width="440" height="230" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+				<div class="videoBlockSmall">
+					<iframe src="//player.vimeo.com/video/72689723" width="440" height="230" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+		    </div>
 		</div>
 	</div>
 	<div id="explore-5" class="royalSlider heroSlider rsMinW slider05">
@@ -170,6 +190,34 @@
 	    /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
 	    imgWidth: 1920,
 	    imgHeight: 1400
+	  });
+	});
+	</script>
+
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+	  $('.royalSliderTall').royalSlider({
+	    imageScaleMode: 'fill',
+	    arrowsNavAutoHide: false,
+	    autoScaleSlider: true, 
+	    autoScaleSliderWidth: 1920,     
+	    autoScaleSliderHeight: 2210,
+		slidesSpacing: 0,
+	    controlNavigation: 'bullets',
+	    thumbsFitInViewport: false,
+	    navigateByClick: true,
+	    startSlideId: 0,
+	    autoPlay: false,
+	    transitionType:'move',
+	    globalCaption: false,
+	    hasDrag: false,
+	    deeplinking: {
+	      enabled: true,
+	      change: false
+	    },
+	    /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
+	    imgWidth: 1920,
+	    imgHeight: 2210
 	  });
 	});
 	</script>

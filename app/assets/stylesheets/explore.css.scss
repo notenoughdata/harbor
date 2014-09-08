@@ -120,6 +120,33 @@ body.explore {
 	  	text-decoration: underline;
 	  }
 	}
+	.peopleBlock {
+		width:900px;
+	}
+	.peopleBlock h4, .peopleBlock p {
+		text-align: right;
+	}
+	.videoBlock {
+	  margin:20px auto;
+	  padding:0px;
+	  background: url(koBG.png) repeat;
+	  width:900px;
+	    border:1px solid #fff;
+		p, ul {
+		  font-size: 15px;
+		  line-height: 1;
+		  font-family: "Museo";
+		  text-transform: none;
+		}
+		p {
+		  margin:0 0 5px 0;
+		}
+	}
+	.videoBlockSmall {
+		width:442px;
+		float: left;
+		margin-right:10px;
+	}
 
 
 	.fullWidth {
@@ -127,11 +154,18 @@ body.explore {
 	  margin: 0 auto 24px;
 	}
 
+	.royalSliderTall {
+	  margin-top: -40px;
+	}
+
 	@media screen and (min-width:960px) and (min-height:660px) {
 	  .heroSlider .rsOverflow,
 	  .royalSlider.heroSlider {
 	      height: 800px !important;
 	  }
+	  .royalSliderTall {
+		height: 1600px !important;
+		}
 	}
 
 	@media screen and (min-width:960px) and (min-height:1000px) {
@@ -139,6 +173,9 @@ body.explore {
 	    .royalSlider.heroSlider {
 	        height: 1000px !important;
 	    }
+	  .royalSliderTall {
+		height: 1600px !important;
+		}
 	}
 	@media screen and (min-width: 0px) and (max-width: 800px) {
 	  .royalSlider.heroSlider,
