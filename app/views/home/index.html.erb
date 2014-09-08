@@ -1,0 +1,81 @@
+<body class="home">
+
+	<div id="home-0" class="royalSlider heroSlider rsMinW slider00">
+		<div class="rsContent slide1 rsNoDrag">
+	  		<%= image_tag "full-width/home-0.jpg", :class=>"rsImg" %>
+
+	  		<div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
+		      <h1>Be Here Now</h1>
+		      <p>Now Jersey City is the place to be.</p>
+		      <p>Now its art scene is exploding.</p>
+		      <p>Now there are new shops</p>
+		      <p>And restaurants opening all the time.</p>
+		      <p>Harborside's inspirational working places</p>
+		      <p>It is fast becoming the now place.</p>
+		      <p>And aspirational living spaces</p>
+		      <p>Are where your people want to be</p>
+		      <p>The future is now.</p>
+		      <p><a class="hex"><%= image_tag "watchFilm.png" %></a></p>
+		    </div>
+	    </div>
+	</div>
+    
+
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+	  $('.royalSlider').royalSlider({
+	    loop: false,
+	    keyboardNavEnabled: true,
+	    controlsInside: false,
+	    imageScaleMode: 'fill',
+	    arrowsNav: true,
+	    arrowsNavAutoHide: false,
+	    autoScaleSlider: true, 
+	    autoScaleSliderWidth: 1920,     
+	    autoScaleSliderHeight: 1400,
+		slidesSpacing: 0,
+	    controlNavigation: 'bullets',
+	    thumbsFitInViewport: false,
+	    navigateByClick: true,
+	    startSlideId: 0,
+	    autoPlay: false,
+	    transitionType:'move',
+	    globalCaption: false,
+	    hasDrag: false,
+	    deeplinking: {
+	      enabled: true,
+	      change: false
+	    },
+	    /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
+	    imgWidth: 1920,
+	    imgHeight: 1400,
+	    // more settings
+	    // fadeinLoadedSlide: false,
+	    // controlNavigationSpacing: 0,
+	    // blockLoop: true,
+	    // numImagesToPreload: 0,
+	    // block: {
+	    //   delay: 400
+	    // }
+	  });
+	});
+	</script>
+
+<!-- this is what you need to replicate for trapezoidal imageMask in ohter sections -->
+
+    <script type="text/javascript">
+        $( document ).ready( function() {
+            $( ".mySelector" ).imageMask( "/assets/masks/mask01.png", function( $canvas ) {
+                console.log( 'imageMask successfully applied', $canvas );
+            } );
+        } );
+    </script>
+
+     <script type="text/javascript">
+        $( document ).ready( function() {
+            $( ".mySelector1" ).imageMask( "/assets/masks/mask02.png", function( $canvas ) {
+                console.log( 'imageMask successfully applied', $canvas );
+            } );
+        } );
+    </script>
+ 

@@ -18,4 +18,5 @@
 //= require jquery.royalslider.js
 //= require skrollr.min.js
 //= require jquery.imageMask.js
+//= require jquery.easing.1.3.js
 //= require parallax.js

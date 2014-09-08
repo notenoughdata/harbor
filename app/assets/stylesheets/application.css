@@ -11,6 +11,7 @@
  *= require royalslider.css
  *= require_self
  *= require_tree .
+ *= require skins/minimal-white/rs-minimal-white.css
  */
 
 
@@ -28,6 +29,13 @@
          url("museo300-regular-webfont.woff") format("woff"), 
          url("museo300-regular-webfont.ttf") format("truetype"), 
          url("museo300-regular-webfont.svg") format("svg");        
+}
+@font-face {
+    font-family: "MuseoBold";
+    src: url("museo700-regular-webfont.eot") format("eot"), 
+         url("museo700-regular-webfont.woff") format("woff"), 
+         url("museo700-regular-webfont.ttf") format("truetype"), 
+         url("museo700-regular-webfont.svg") format("svg");        
 }
 
 .brand a img {
