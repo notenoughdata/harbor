@@ -125,36 +125,41 @@ li.social {
   margin-top: 0;
 }
 .slider01 .rsOverflow {
-  margin-top: -100px;
+  margin-top: -70px;
 }
 .slider02 .rsOverflow {
-  margin-top: -160px;
+  margin-top: -140px;
 }
 .slider03 .rsOverflow {
-  margin-top: -300px;
+  margin-top: -210px;
 }
 .slider04 .rsOverflow {
-  margin-top: -400px;
+  margin-top: -280px;
 }
 .slider05 .rsOverflow {
-  margin-top: -500px;
+  margin-top: -350px;
 }
 .slider06 .rsOverflow {
-  margin-top: -600px;
+  margin-top: -420px;
 }
 .slider07 .rsOverflow {
-  margin-top: -700px;
+  margin-top: -490px;
 }
 .slider08 .rsOverflow {
-  margin-top: -800px;
+  margin-top: -560px;
 }
 .slider09 .rsOverflow {
-  margin-top: -900px;
+  margin-top: -730px;
 }
 .slider10 .rsOverflow {
-  margin-top: -1000px;
+  margin-top: -810px;
 }
 
-/*temporary hardcoded footer margins*/
+/* temporary hardcoded footer margins */
+/* set the margin top and padding bottom of each page footer below to the, */
+/* margin above... with sliderXX equalling the LAST slider in the assocaited HTML */
 
-body.live .navbar-bottom {margin-top:-160px; padding-bottom: 160px;}
+body.live .navbar-bottom {margin-top:-230px; padding-bottom: 230px;}
+body.harborside .navbar-bottom {margin-top:-490px; padding-bottom: 490px;}
+body.happening .navbar-bottom {margin-top:-140px; padding-bottom: 140px;}
+body.arrive .navbar-bottom {margin-top:-210px; padding-bottom: 210px;}
