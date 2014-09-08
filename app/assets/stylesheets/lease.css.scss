@@ -11,6 +11,33 @@ body.lease {
 	#lease-1 #lease-2 #lease-3 #lease-4 #lease-5 #lease-6 #lease-7 #lease-8 .rsOverflow {
 		// margin-top: -100px;
 	}
+
+		.titleBlock {
+	  position: absolute;
+	  margin: auto;
+	  // background: #FFF;
+	  // background: rgba(255, 255, 255, 0.8);
+	  overflow: hidden;
+	  color: #FFF;
+		// width: 100%;
+		left:447px;
+		top:120px;
+		max-width: 900px;
+	}
+	h4 {
+	  font-family: "GoLongRegular"; 
+	  text-transform: uppercase;
+	  font-size: 98px;
+	  letter-spacing: -1px;
+	  line-height: 1.5em;
+	  margin:0px;
+	}
+			/*type*/
+	h4 i {
+	    background: url(koBG.png) repeat;
+	    padding:10px 10px 0 10px;
+	    border:1px solid #fff;
+	  }
 	.coloredBlock {
 	  padding: 12px;
 	  background: rgba(255,0,0,0.6);
@@ -33,7 +60,7 @@ body.lease {
 	}
 	.infoBlockLeftBlack {
 	  color: #FFF;
-	  left: 50%;
+	  // left: 50%;
 	  right: auto;
 	}
 	.infoBlock h4 {
@@ -117,5 +144,26 @@ body.lease {
 	     font-size: 14px;
 	     line-height: 17px;
 	  }
+	}
+
+
+
+	.hexBlock {
+		margin-top: 0;
+	}
+	.topHex {
+		margin-left: 20px;
+	}
+
+	.bottomHex {
+		margin-left: 20px;
+	}
+
+	#bottomHexBlock {
+		// margin-left: -30;
+	}
+
+	#topHexBlock  { 
+		padding-left: 80px;
 	}
 }

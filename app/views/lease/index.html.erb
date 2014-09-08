@@ -3,13 +3,31 @@
 
 	<div id="lease-0" class="royalSlider heroSlider rsMinW slider00">
 	  <div class="rsContent rsNoDrag">
+	  	 <div class="titleBlock infoBlockLeftBlack rsABlock"> 
+	    	<h4>BE HERE NOW</h4>
+	    	<div class="hexBlock" id="topHexBlock">
+					<%= image_tag "hexagon.png", :class => "topHex" %>
+					<%= image_tag "hexagon.png", :class => "topHex" %>
+					</div>
+					<div class="hexBlock" id="bottomHexBlock">
+					<%= image_tag "hexagon.png", :class => "bottomHex"  %>
+					<%= image_tag "hexagon.png", :class => "bottomHex"  %>
+					<%= image_tag "hexagon.png", :class => "bottomHex"  %>
+					</div>
+	   	 </div>
+
+
 	  	<%= image_tag "full-width/lease-0.jpg", :class=>"rsImg", :data=>{:start=>"transform:translateY(0%)", :end=>"transform:translateY(-200%)"} %>
-	    </div>
+	   </div>
 	</div>
+
 
 	<div id="lease-1" class="royalSlider heroSlider rsMinW slider01" data-start="transform:translateY(0%)" data-end="transform:translateY(10%)">
 	  <div class="rsContent">
+
 	  	<%= image_tag "full-width/lease-1-01.jpg", :class=>"rsImg mySelector1" %>
+
+
 	  </div>
 	  <div class="rsContent">
 	  	<%= image_tag "full-width/lease-1-02.jpg", :class=>"rsImg mySelector" %>
