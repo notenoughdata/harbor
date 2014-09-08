@@ -2150,7 +2150,7 @@
 			}
 			if (imgAlignCenter) {     
 				cssObj.marginLeft = Math.floor((containerWidth - nWidth) / 2) +  bMargin;
-				cssObj.marginTop = Math.floor((containerHeight - nHeight) / 2) +  bMargin;
+				// cssObj.marginTop = Math.floor((containerHeight - nHeight) / 2) +  bMargin;
 			}
 			img.css(cssObj);
 		}

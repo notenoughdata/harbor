@@ -116,3 +116,37 @@ li.social {
   /*-webkit-mask-box-image: url(masks/top1920x1400.svg);*/
   /*z-index: 999;*/
 }
+
+.slider00 .rsOverflow {
+  margin-top: 0;
+}
+.slider01 .rsOverflow {
+  margin-top: -100px;
+}
+.slider02 .rsOverflow {
+  margin-top: -200px;
+}
+.slider03 .rsOverflow {
+  margin-top: -300px;
+}
+.slider04 .rsOverflow {
+  margin-top: -400px;
+}
+.slider05 .rsOverflow {
+  margin-top: -500px;
+}
+.slider06 .rsOverflow {
+  margin-top: -600px;
+}
+.slider07 .rsOverflow {
+  margin-top: -700px;
+}
+.slider08 .rsOverflow {
+  margin-top: -800px;
+}
+.slider09 .rsOverflow {
+  margin-top: -900px;
+}
+.slider10 .rsOverflow {
+  margin-top: -1000px;
+}

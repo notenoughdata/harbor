@@ -1,39 +1,32 @@
 <body class="live">
 
-	<!-- <h1>Lease#index</h1>
-	<p>Find me in app/views/lease/index.html.erb</p> -->
-
-	<div id="live-0" class="royalSlider heroSlider rsMinW" data-move-offset="200">
+	<div id="live-0" class="royalSlider heroSlider rsMinW slider01">
 	  <div class="rsContent rsNoDrag">
 	  	<%= image_tag "full-width/live-0.jpg", :class=>"rsImg" %>
-		  	<div class="infoBlock infoBlockLeftBlack" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="400">
-		      <h4>The Future is Now</h4>
-		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
-		    </div>
-    	</div>
+	    </div>
 	</div>
-	<div id="live-1" class="royalSlider heroSlider rsMinW">
-		<div class="rsContent rsNoDrag">
-		  	<%= image_tag "full-width/live-1.jpg", :class=>"rsImg mySelector" %>
-		</div>
+	<div id="live-1" class="royalSlider heroSlider rsMinW slider02">
+	  <div class="rsContent rsNoDrag">
+	  	<%= image_tag "full-width/live-1.jpg", :class=>"rsImg mySelector" %>
+	    </div>
 	</div>
-	<div id="full-width-slider" class="royalSlider heroSlider rsMinW">
+	<div id="full-width-slider" class="royalSlider heroSlider rsMinW slider03">
 	  <div class="rsContent">
-	  	<%= image_tag "full-width/live-2-01.jpg", :class=>"rsImg" %>
+	  	<%= image_tag "full-width/live-2-01.jpg", :class=>"rsImg mySelector1" %>
 	    <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
 	      <h4>The Future is Now</h4>
 	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
 	    </div>
 	  </div>
 	  <div class="rsContent">
-	  	<%= image_tag "full-width/live-2-02.jpg", :class=>"rsImg" %>
+	  	<%= image_tag "full-width/live-2-02.jpg", :class=>"rsImg mySelector1" %>
 	     <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
 	      <h4>This is a static HTML block</h4>
 	      <p>It's always displayed and not animated by slider.</p>
 	    </div>
 	  </div>
 	 <div class="rsContent">
-	  	<%= image_tag "full-width/live-2-03.jpg", :class=>"rsImg" %>
+	  	<%= image_tag "full-width/live-2-03.jpg", :class=>"rsImg mySelector1" %>
 	    <div class="infoBlock rsABlock infoBlockLeftBlack" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
 	      <h4>You can link to this slide by adding #3 to url.</h4>
 	      <p><a href="http://dimsemenov.com/plugins/royal-slider/gallery-with-deeplinking/">Learn more</a></p>
@@ -50,7 +43,7 @@
 	    controlsInside: false,
 	    imageScaleMode: 'fill',
 	    arrowsNavAutoHide: false,
-	    autoScaleSlider: false, 
+	    autoScaleSlider: true, 
 	    autoScaleSliderWidth: 1920,     
 	    autoScaleSliderHeight: 1400,
 	    controlNavigation: 'bullets',
@@ -58,23 +51,35 @@
 	    navigateByClick: true,
 	    startSlideId: 0,
 	    autoPlay: false,
-	    transitionType:'move',
+	    transitionType:'fade',
 	    globalCaption: false,
 	    hasDrag: false,
 	    deeplinking: {
 	      enabled: true,
-	      change: true
+	      change: false
 	    },
 	    /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
-	    // imgWidth: 1920,
-	    // imgHeight: 1400
+	    imgWidth: 1920,
+	    imgHeight: 1400
 	  });
 	});
 	</script>
-      <script type="text/javascript">
+
+<!-- this is what you need to replicate for trapezoidal imageMask in ohter sections -->
+
+    <script type="text/javascript">
         $( document ).ready( function() {
-            $( ".mySelector" ).imageMask( "/assets/masks/mask2.png", function( $canvas ) {
+            $( ".mySelector" ).imageMask( "/assets/masks/mask01.png", function( $canvas ) {
                 console.log( 'imageMask successfully applied', $canvas );
             } );
         } );
     </script>
+
+     <script type="text/javascript">
+        $( document ).ready( function() {
+            $( ".mySelector1" ).imageMask( "/assets/masks/mask02.png", function( $canvas ) {
+                console.log( 'imageMask successfully applied', $canvas );
+            } );
+        } );
+    </script>
+ 
