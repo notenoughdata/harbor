@@ -10,7 +10,7 @@
 	</div>
 	<div id="live-1" class="royalSlider heroSlider rsMinW">
 	  <div class="rsContent rsNoDrag">
-	  	<%= image_tag "full-width/live-1.jpg", :class=>"rsImg mySelector" %>
+	  	<%= image_tag "full-width/live-1.jpg", :class=>"rsImg" %>
 	    </div>
 	</div>
 	<div id="full-width-slider" class="royalSlider heroSlider rsMinW">
@@ -68,10 +68,19 @@
 	});
 	</script>
 
+<!-- this is what you need to replicate for trapezoidal imageMask in ohter sections -->
 
     <script type="text/javascript">
         $( document ).ready( function() {
             $( ".mySelector" ).imageMask( "/assets/masks/mask2.png", function( $canvas ) {
+                console.log( 'imageMask successfully applied', $canvas );
+            } );
+        } );
+    </script>
+
+     <script type="text/javascript">
+        $( document ).ready( function() {
+            $( ".mySelector1" ).imageMask( "/assets/masks/mask.png", function( $canvas ) {
                 console.log( 'imageMask successfully applied', $canvas );
             } );
         } );
