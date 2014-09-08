@@ -1,11 +1,86 @@
 <body class="explore">
 
-<video controls width="1920" width="1400" data-type="video" data-offsetY="2400" data-speed="1.5">
-			<source src="video/parallelparking.theora.ogv" type="video/ogg" />
-			<source src="video/parallelparking.mp4" type="video/mp4" />
-			<source src="video/parallelparking.webm" type="video/webm" />
-		</video>
+<div id="explore-0" class="royalSlider heroSlider rsMinW slider00">
+		<div class="rsContent rsNoDrag">
+	  		<%= image_tag "full-width/explore-0.jpg", :class=>"rsImg" %>
+	    </div>
+	</div>
+	<div id="explore-1" class="royalSlider heroSlider rsMinW slider01">
+		<div class="rsContent">
+	  		<%= image_tag "full-width/explore-1-01.jpg", :class=>"rsImg mySelector" %>
+	    </div>
+	    <div class="rsContent">
+	  		<%= image_tag "full-width/explore-1-02.jpg", :class=>"rsImg mySelector1" %>
+	    </div>
+	    <div class="rsContent">
+	  		<%= image_tag "full-width/explore-1-03.jpg", :class=>"rsImg mySelector" %>
+	    </div>
+	</div>
 
+	<div id="explore-2" class="royalSlider heroSlider rsMinW slider02">
+		<div class="rsContent rsNoDrag">
+	  		<%= image_tag "full-width/explore-2.jpg", :class=>"rsImg mySelector1" %>
+		</div>
+	</div>
 
+	<div id="explore-3" class="royalSlider heroSlider rsMinW slider03">
+		<div class="rsContent">
+	  		<%= image_tag "full-width/explore-3-01.jpg", :class=>"rsImg mySelector" %>
+		</div>
+		<div class="rsContent">
+			<%= image_tag "full-width/explore-3-02.jpg", :class=>"rsImg mySelector1" %>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+	  $('.royalSlider').royalSlider({
+	    arrowsNav: true,
+	    loop: false,
+	    keyboardNavEnabled: true,
+	    controlsInside: false,
+	    imageScaleMode: 'fill',
+	    arrowsNavAutoHide: false,
+	    autoScaleSlider: true, 
+	    autoScaleSliderWidth: 1920,     
+	    autoScaleSliderHeight: 1400,
+		slidesSpacing: 0,
+	    controlNavigation: 'bullets',
+	    thumbsFitInViewport: false,
+	    navigateByClick: true,
+	    startSlideId: 0,
+	    autoPlay: false,
+	    transitionType:'move',
+	    globalCaption: false,
+	    hasDrag: false,
+	    deeplinking: {
+	      enabled: true,
+	      change: false
+	    },
+	    /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
+	    imgWidth: 1920,
+	    imgHeight: 1400
+	  });
+	});
+	</script>
+
+<!-- this is what you need to replicate for trapezoidal imageMask in ohter sections -->
+
+    <script type="text/javascript">
+        $( document ).ready( function() {
+            $( ".mySelector" ).imageMask( "/assets/masks/mask01.png", function( $canvas ) {
+                console.log( 'imageMask successfully applied', $canvas );
+            } );
+        } );
+    </script>
+
+     <script type="text/javascript">
+        $( document ).ready( function() {
+            $( ".mySelector1" ).imageMask( "/assets/masks/mask02.png", function( $canvas ) {
+                console.log( 'imageMask successfully applied', $canvas );
+            } );
+        } );
+    </script>
+ 
 
 </body>
