@@ -16,25 +16,25 @@
 
 @font-face {
     font-family: "GoLongRegular";
-    src: url("golong-webfont.eot") format("eot"), 
-         url("golong-webfont.woff") format("woff"), 
-         url("golong-webfont.ttf") format("truetype"), 
+    src: url("golong-webfont.eot") format("eot"),
+         url("golong-webfont.woff") format("woff"),
+         url("golong-webfont.ttf") format("truetype"),
          url("golong-webfont.svg") format("svg");
 }
 
 @font-face {
     font-family: "Museo";
-    src: url("museo300-regular-webfont.eot") format("eot"), 
-         url("museo300-regular-webfont.woff") format("woff"), 
-         url("museo300-regular-webfont.ttf") format("truetype"), 
-         url("museo300-regular-webfont.svg") format("svg");        
+    src: url("museo300-regular-webfont.eot") format("eot"),
+         url("museo300-regular-webfont.woff") format("woff"),
+         url("museo300-regular-webfont.ttf") format("truetype"),
+         url("museo300-regular-webfont.svg") format("svg");
 }
 @font-face {
     font-family: "MuseoBold";
-    src: url("museo700-regular-webfont.eot") format("eot"), 
-         url("museo700-regular-webfont.woff") format("woff"), 
-         url("museo700-regular-webfont.ttf") format("truetype"), 
-         url("museo700-regular-webfont.svg") format("svg");        
+    src: url("museo700-regular-webfont.eot") format("eot"),
+         url("museo700-regular-webfont.woff") format("woff"),
+         url("museo700-regular-webfont.ttf") format("truetype"),
+         url("museo700-regular-webfont.svg") format("svg");
 }
 
 
@@ -74,7 +74,7 @@ ul.footer li a:hover {
 li.social {
   padding-top: 15px;
   color: white;
-  font-family: "GoLongRegular";  
+  font-family: "GoLongRegular";
 }
 
 #social {

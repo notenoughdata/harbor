@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body.lease { 
+body.lease {
 	// background-color:#000;
 	#lease-0, #lease-1, #lease-2, #lease-3, #lease-4, #lease-5, #lease-6, #lease-7, #lease-8, #full-width-slider {
 	  width: 100%;
@@ -20,12 +20,13 @@ body.lease {
 	  overflow: hidden;
 	  color: #FFF;
 		// width: 100%;
-		left:447px;
+		left:50%;
+		margin-left: -248px;
 		top:160px;
-		max-width: 900px;
+		max-width: 497px;
 	}
 	h4 {
-	  font-family: "GoLongRegular"; 
+	  font-family: "GoLongRegular";
 	  text-transform: uppercase;
 	  font-size: 98px;
 	  letter-spacing: -1px;
@@ -66,7 +67,7 @@ body.lease {
 	.infoBlock h4 {
 	  line-height: 1.2;
 	  margin: 0;
-	  font-family: "GoLongRegular"; 
+	  font-family: "GoLongRegular";
 	  text-transform: uppercase;
 	  font-size: 50px;
 	  letter-spacing: -1px;
@@ -102,8 +103,8 @@ body.lease {
 	  bottom: 12px;
 	  top: auto;
 	  border-radius: 2px;
-	  z-index: 25; 
-	} 
+	  z-index: 25;
+	}
 	.photosBy a {
 	  color: #000;
 	}
@@ -163,7 +164,7 @@ body.lease {
 		// margin-left: -30;
 	}
 
-	#topHexBlock  { 
+	#topHexBlock  {
 		padding-left: 80px;
 	}
 }
