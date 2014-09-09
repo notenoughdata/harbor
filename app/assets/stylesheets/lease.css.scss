@@ -55,9 +55,86 @@ body.lease {
 	  max-width: 35%;
 	  padding-bottom: 0;
 	  // background: #FFF;
+	  color: #FFF;
 	  // background: rgba(255, 255, 255, 0.8);
 	  overflow: hidden;
 	  padding: 20px;
+	}
+	.infoBlock.center{
+		top:180px;
+		left:50%;
+		margin-left:-30%;
+		max-width:80%;
+		width:60%;
+		h4{
+			padding: 10px 5px 3px 5px;
+			float:left;
+			span.underline{
+				border-bottom: 5px white solid;
+			}
+		}
+		span.address{
+			text-transform:uppercase;
+			margin-top: 40px;
+			padding-left: 14px;
+			font-family: "Museo";
+			float:left;
+			font-size: 1.7em;
+		}
+		.blurb{
+			margin-top:72px;
+			margin-bottom:8px;
+			h5{
+				text-transform:uppercase;
+				font-size:1.7em;
+				font-family: "Museo";
+			}
+		}
+		.blurb_detail{
+			overflow:auto;
+			width:100%;
+			background: rgba(0,0,0,0.75);
+	  		border:2px solid #fff;
+	  		padding-bottom:30px;
+	  		p{
+	  			float:left;
+	  			width:50%;
+	  			font-size: 12px;
+			  line-height: 1.2;
+			  font-family: "Museo";
+			  margin:0;
+			  font-size: 16px;
+			  line-height: 1.2;
+			  padding:10px;
+	  		}
+	  		img{
+	  			float:right;
+	  			width: 40%;
+	  			margin-right: 5%;
+	  			margin-top:1em;
+	  		}
+	  		span.plansspec{
+	  			font-family: "GoLongRegular";
+	  			padding:2px 3px;
+	  			position:absolute;
+	  			right:21px;
+	  			bottom:20px;
+	  			font-size:1.5em;
+	  			background-color:white;
+	  			color: #12617b;
+	  			text-transform:uppercase;
+	  		}
+		}
+	}
+	.infoBlock.center.right{
+		text-align:right;
+		h4{
+			float:right;
+		}
+		.blurb{
+			float:none;
+			text-align:right;
+		}
 	}
 	.infoBlockLeftBlack {
 	  color: #FFF;
@@ -76,16 +153,6 @@ body.lease {
 	  border:2px solid #fff;
 	  padding:5px;
 	  text-align: center;
-	}
-	.infoBlock p {
-	  font-size: 16px;
-	  line-height: 1.2;
-	  font-family: "Museo";
-	  margin:-2px 0 0 80px;
-	  background: #000;
-	  background: rgba(0,0,0,0.75);
-	  border:2px solid #fff;
-	  padding:10px;
 	}
 	.infoBlock a {
 	  color: #FFF;
