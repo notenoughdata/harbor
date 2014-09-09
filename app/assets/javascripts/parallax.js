@@ -18,7 +18,7 @@ $(document).ready(function(){
 	});
 	
 	// For each element that has a data-type attribute
-	$('section[data-type="background"]').each(function(){
+	$('div[data-type="background"]').each(function(){
 	
 	
 		// Store some variables based on where we are

@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body.lease { 
+body.lease {
 	// background-color:#000;
 	#lease-0, #lease-1, #lease-2, #lease-3, #lease-4, #lease-5, #lease-6, #lease-7, #lease-8, #full-width-slider {
 	  width: 100%;
@@ -11,6 +11,34 @@ body.lease {
 	#lease-1 #lease-2 #lease-3 #lease-4 #lease-5 #lease-6 #lease-7 #lease-8 .rsOverflow {
 		// margin-top: -100px;
 	}
+
+		.titleBlock {
+	  position: absolute;
+	  margin: auto;
+	  // background: #FFF;
+	  // background: rgba(255, 255, 255, 0.8);
+	  overflow: hidden;
+	  color: #FFF;
+		// width: 100%;
+		left:50%;
+		margin-left: -248px;
+		top:160px;
+		max-width: 497px;
+	}
+	h4 {
+	  font-family: "GoLongRegular";
+	  text-transform: uppercase;
+	  font-size: 98px;
+	  letter-spacing: -1px;
+	  line-height: 1.5em;
+	  margin:0px;
+	}
+			/*type*/
+	h4 i {
+	    background: url(koBG.png) repeat;
+	    padding:10px 10px 0 10px;
+	    border:1px solid #fff;
+	  }
 	.coloredBlock {
 	  padding: 12px;
 	  background: rgba(255,0,0,0.6);
@@ -33,13 +61,13 @@ body.lease {
 	}
 	.infoBlockLeftBlack {
 	  color: #FFF;
-	  left: 50%;
+	  // left: 50%;
 	  right: auto;
 	}
 	.infoBlock h4 {
 	  line-height: 1.2;
 	  margin: 0;
-	  font-family: "GoLongRegular"; 
+	  font-family: "GoLongRegular";
 	  text-transform: uppercase;
 	  font-size: 50px;
 	  letter-spacing: -1px;
@@ -75,8 +103,8 @@ body.lease {
 	  bottom: 12px;
 	  top: auto;
 	  border-radius: 2px;
-	  z-index: 25; 
-	} 
+	  z-index: 25;
+	}
 	.photosBy a {
 	  color: #000;
 	}
@@ -88,20 +116,20 @@ body.lease {
 	@media screen and (min-width:960px) and (min-height:660px) {
 	  .heroSlider .rsOverflow,
 	  .royalSlider.heroSlider {
-	      height: 700px !important;
+	      height: 900px !important;
 	  }
 	}
 
 	@media screen and (min-width:960px) and (min-height:1000px) {
 	    .heroSlider .rsOverflow,
 	    .royalSlider.heroSlider {
-	        height: 700px !important;
+	        height: 900px !important;
 	    }
 	}
 	@media screen and (min-width: 0px) and (max-width: 800px) {
 	  .royalSlider.heroSlider,
 	  .royalSlider.heroSlider .rsOverflow {
-	    height: 300px !important;
+	    height: 700px !important;
 	  }
 	  .infoBlock {
 	    padding: 10px;
@@ -117,5 +145,26 @@ body.lease {
 	     font-size: 14px;
 	     line-height: 17px;
 	  }
+	}
+
+
+
+	.hexBlock {
+		margin-top: 0;
+	}
+	.topHex {
+		margin-left: 20px;
+	}
+
+	.bottomHex {
+		margin-left: 20px;
+	}
+
+	#bottomHexBlock {
+		// margin-left: -30;
+	}
+
+	#topHexBlock  {
+		padding-left: 80px;
 	}
 }
