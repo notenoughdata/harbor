@@ -21,7 +21,7 @@ body.lease {
 	  color: #FFF;
 		// width: 100%;
 		left:447px;
-		top:120px;
+		top:160px;
 		max-width: 900px;
 	}
 	h4 {
@@ -115,20 +115,20 @@ body.lease {
 	@media screen and (min-width:960px) and (min-height:660px) {
 	  .heroSlider .rsOverflow,
 	  .royalSlider.heroSlider {
-	      height: 700px !important;
+	      height: 900px !important;
 	  }
 	}
 
 	@media screen and (min-width:960px) and (min-height:1000px) {
 	    .heroSlider .rsOverflow,
 	    .royalSlider.heroSlider {
-	        height: 700px !important;
+	        height: 900px !important;
 	    }
 	}
 	@media screen and (min-width: 0px) and (max-width: 800px) {
 	  .royalSlider.heroSlider,
 	  .royalSlider.heroSlider .rsOverflow {
-	    height: 300px !important;
+	    height: 700px !important;
 	  }
 	  .infoBlock {
 	    padding: 10px;
