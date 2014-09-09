@@ -37,6 +37,9 @@
          url("museo700-regular-webfont.svg") format("svg");
 }
 
+/* Fix for Skrollr weirdness */
+body{height:100% !important;}
+
 
 .brand a img {
   margin-right: 50px;
@@ -48,6 +51,9 @@
 }
 
 footer {
+    .row div{
+        padding-top:12px;
+    }
     ul.footer{
         float:left;
         li{
