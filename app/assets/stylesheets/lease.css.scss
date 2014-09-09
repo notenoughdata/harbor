@@ -1,237 +1,227 @@
 // Place all the styles related to the lease controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 body.lease {
-	// background-color:#000;
-	#lease-0, #lease-1, #lease-2, #lease-3, #lease-4, #lease-5, #lease-6, #lease-7, #lease-8, #full-width-slider {
-	  width: 100%;
-	  color: #000;
+// background-color:#000;
+#lease-0, #lease-1, #lease-2, #lease-3, #lease-4, #lease-5, #lease-6, #lease-7, #lease-8, #full-width-slider {
+	width: 100%;
+	color: #000;
+}
+#lease-1 #lease-2 #lease-3 #lease-4 #lease-5 #lease-6 #lease-7 #lease-8 .rsOverflow {
+// margin-top: -100px;
+}
+.titleBlock {
+	position: absolute;
+	margin: auto;
+// background: #FFF;
+// background: rgba(255, 255, 255, 0.8);
+overflow: hidden;
+color: #FFF;
+// width: 100%;
+left:50%;
+margin-left: -248px;
+top:160px;
+max-width: 497px;
+}
+h4 {
+	font-family: "GoLongRegular";
+	text-transform: uppercase;
+	font-size: 98px;
+	letter-spacing: -1px;
+	line-height: 1.5em;
+	margin:0px;
+}
+/*type*/
+h4 i {
+	background: url(koBG.png) repeat;
+	padding:10px 10px 0 10px;
+	border:1px solid #fff;
+}
+.coloredBlock {
+	padding: 12px;
+	background: rgba(255,0,0,0.6);
+	color: #FFF;
+	width: 200px;
+	left: 20%;
+	top: 5%;
+}
+.infoBlock {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	left: auto;
+	max-width: 35%;
+	padding-bottom: 0;
+// background: #FFF;
+color: #FFF;
+// background: rgba(255, 255, 255, 0.8);
+overflow: hidden;
+padding: 20px;
+}
+.infoBlock.center{
+	top:180px;
+	left:50%;
+	margin-left:-30%;
+	max-width:80%;
+	width:60%;
+	h4{
+		padding: 10px 5px 3px 5px;
+		float:left;
+		span.underline{
+			border-bottom: 5px white solid;
+		}
 	}
-	#lease-1 #lease-2 #lease-3 #lease-4 #lease-5 #lease-6 #lease-7 #lease-8 .rsOverflow {
-		// margin-top: -100px;
+	span.address{
+		text-transform:uppercase;
+		margin-top: 40px;
+		padding-left: 14px;
+		font-family: "Museo";
+		float:left;
+		font-size: 1.7em;
 	}
-
-		.titleBlock {
-	  position: absolute;
-	  margin: auto;
-	  // background: #FFF;
-	  // background: rgba(255, 255, 255, 0.8);
-	  overflow: hidden;
-	  color: #FFF;
-		// width: 100%;
-		left:50%;
-		margin-left: -248px;
-		top:160px;
-		max-width: 497px;
+	.blurb{
+		margin-top:72px;
+		margin-bottom:8px;
+		h5{
+			text-transform:uppercase;
+			font-size:1.7em;
+			font-family: "Museo";
+		}
 	}
-	h4 {
-	  font-family: "GoLongRegular";
-	  text-transform: uppercase;
-	  font-size: 98px;
-	  letter-spacing: -1px;
-	  line-height: 1.5em;
-	  margin:0px;
+	.blurb_detail{
+		overflow:auto;
+		width:100%;
+		background: rgba(0,0,0,0.75);
+		border:2px solid #fff;
+		padding-bottom:30px;
+		p{
+			float:left;
+			width:50%;
+			font-size: 12px;
+			line-height: 1.2;
+			font-family: "Museo";
+			margin:0;
+			font-size: 16px;
+			line-height: 1.2;
+			padding:10px;
+		}
+		img{
+			float:right;
+			width: 40%;
+			margin-right: 5%;
+			margin-top:1em;
+		}
+		span.plansspec{
+			font-family: "GoLongRegular";
+			padding:2px 3px;
+			position:absolute;
+			right:21px;
+			bottom:20px;
+			font-size:1.5em;
+			background-color:white;
+			color: #12617b;
+			text-transform:uppercase;
+		}
 	}
-			/*type*/
-	h4 i {
-	    background: url(koBG.png) repeat;
-	    padding:10px 10px 0 10px;
-	    border:1px solid #fff;
-	  }
-	.coloredBlock {
-	  padding: 12px;
-	  background: rgba(255,0,0,0.6);
-	  color: #FFF;
-	   width: 200px;
-	   left: 20%;
-	   top: 5%;
+}
+.infoBlock.center.right{
+	text-align:right;
+	h4{
+		float:right;
+	}
+	.blurb{
+		float:none;
+		text-align:right;
+	}
+}
+.infoBlockLeftBlack {
+	color: #FFF;
+// left: 50%;
+right: auto;
+}
+.infoBlock h4 {
+	line-height: 1.2;
+	margin: 0;
+	font-family: "GoLongRegular";
+	text-transform: uppercase;
+	font-size: 50px;
+	letter-spacing: -1px;
+	background: #000;
+	background: rgba(0,0,0,0.75);
+	border:2px solid #fff;
+	padding:5px;
+	text-align: center;
+}
+.infoBlock a {
+	color: #FFF;
+	text-decoration: underline;
+}
+.photosBy {
+	position: absolute;
+	line-height: 24px;
+	font-size: 12px;
+	background: #FFF;
+	color: #000;
+	padding: 0px 10px;
+	position: absolute;
+	left: 12px;
+	bottom: 12px;
+	top: auto;
+	border-radius: 2px;
+	z-index: 25;
+}
+.photosBy a {
+	color: #000;
+}
+.fullWidth {
+	max-width: 1920px;
+	margin: 0 auto 24px;
+}
+@media screen and (min-width:960px) and (min-height:660px) {
+	.heroSlider .rsOverflow,
+	.royalSlider.heroSlider {
+		height: 900px !important;
+	}
+}
+@media screen and (min-width:960px) and (min-height:1000px) {
+	.heroSlider .rsOverflow,
+	.royalSlider.heroSlider {
+		height: 900px !important;
+	}
+}
+@media screen and (min-width: 0px) and (max-width: 800px) {
+	.royalSlider.heroSlider,
+	.royalSlider.heroSlider .rsOverflow {
+		height: 700px !important;
 	}
 	.infoBlock {
-	  position: absolute;
-	  top: 30px;
-	  right: 30px;
-	  left: auto;
-	  max-width: 35%;
-	  padding-bottom: 0;
-	  // background: #FFF;
-	  color: #FFF;
-	  // background: rgba(255, 255, 255, 0.8);
-	  overflow: hidden;
-	  padding: 20px;
+		padding: 10px;
+		height: auto;
+		max-height: 100%;
+		min-width: 40%;
+		left: 5px;
+		top: 5px;
+		right: auto;
+		font-size: 12px;
 	}
-	.infoBlock.center{
-		top:180px;
-		left:50%;
-		margin-left:-30%;
-		max-width:80%;
-		width:60%;
-		h4{
-			padding: 10px 5px 3px 5px;
-			float:left;
-			span.underline{
-				border-bottom: 5px white solid;
-			}
-		}
-		span.address{
-			text-transform:uppercase;
-			margin-top: 40px;
-			padding-left: 14px;
-			font-family: "Museo";
-			float:left;
-			font-size: 1.7em;
-		}
-		.blurb{
-			margin-top:72px;
-			margin-bottom:8px;
-			h5{
-				text-transform:uppercase;
-				font-size:1.7em;
-				font-family: "Museo";
-			}
-		}
-		.blurb_detail{
-			overflow:auto;
-			width:100%;
-			background: rgba(0,0,0,0.75);
-	  		border:2px solid #fff;
-	  		padding-bottom:30px;
-	  		p{
-	  			float:left;
-	  			width:50%;
-	  			font-size: 12px;
-			  line-height: 1.2;
-			  font-family: "Museo";
-			  margin:0;
-			  font-size: 16px;
-			  line-height: 1.2;
-			  padding:10px;
-	  		}
-	  		img{
-	  			float:right;
-	  			width: 40%;
-	  			margin-right: 5%;
-	  			margin-top:1em;
-	  		}
-	  		span.plansspec{
-	  			font-family: "GoLongRegular";
-	  			padding:2px 3px;
-	  			position:absolute;
-	  			right:21px;
-	  			bottom:20px;
-	  			font-size:1.5em;
-	  			background-color:white;
-	  			color: #12617b;
-	  			text-transform:uppercase;
-	  		}
-		}
+	.infoBlock h3 {
+		font-size: 14px;
+		line-height: 17px;
 	}
-	.infoBlock.center.right{
-		text-align:right;
-		h4{
-			float:right;
-		}
-		.blurb{
-			float:none;
-			text-align:right;
-		}
-	}
-	.infoBlockLeftBlack {
-	  color: #FFF;
-	  // left: 50%;
-	  right: auto;
-	}
-	.infoBlock h4 {
-	  line-height: 1.2;
-	  margin: 0;
-	  font-family: "GoLongRegular";
-	  text-transform: uppercase;
-	  font-size: 50px;
-	  letter-spacing: -1px;
-	  background: #000;
-	  background: rgba(0,0,0,0.75);
-	  border:2px solid #fff;
-	  padding:5px;
-	  text-align: center;
-	}
-	.infoBlock a {
-	  color: #FFF;
-	  text-decoration: underline;
-	}
-	.photosBy {
-	  position: absolute;
-	  line-height: 24px;
-	  font-size: 12px;
-	  background: #FFF;
-	  color: #000;
-	  padding: 0px 10px;
-	  position: absolute;
-	  left: 12px;
-	  bottom: 12px;
-	  top: auto;
-	  border-radius: 2px;
-	  z-index: 25;
-	}
-	.photosBy a {
-	  color: #000;
-	}
-	.fullWidth {
-	  max-width: 1920px;
-	  margin: 0 auto 24px;
-	}
-
-	@media screen and (min-width:960px) and (min-height:660px) {
-	  .heroSlider .rsOverflow,
-	  .royalSlider.heroSlider {
-	      height: 900px !important;
-	  }
-	}
-
-	@media screen and (min-width:960px) and (min-height:1000px) {
-	    .heroSlider .rsOverflow,
-	    .royalSlider.heroSlider {
-	        height: 900px !important;
-	    }
-	}
-	@media screen and (min-width: 0px) and (max-width: 800px) {
-	  .royalSlider.heroSlider,
-	  .royalSlider.heroSlider .rsOverflow {
-	    height: 700px !important;
-	  }
-	  .infoBlock {
-	    padding: 10px;
-	    height: auto;
-	    max-height: 100%;
-	    min-width: 40%;
-	    left: 5px;
-	    top: 5px;
-	    right: auto;
-	    font-size: 12px;
-	  }
-	  .infoBlock h3 {
-	     font-size: 14px;
-	     line-height: 17px;
-	  }
-	}
-
-
-
-	.hexBlock {
-		margin-top: 0;
-	}
-	.topHex {
-		margin-left: 20px;
-	}
-
-	.bottomHex {
-		margin-left: 20px;
-	}
-
-	#bottomHexBlock {
-		// margin-left: -30;
-	}
-
-	#topHexBlock  {
-		padding-left: 80px;
-	}
+}
+.hexBlock {
+	margin-top: 0;
+}
+.topHex {
+	margin-left: 20px;
+}
+.bottomHex {
+	margin-left: 20px;
+}
+#bottomHexBlock {
+// margin-left: -30;
+}
+#topHexBlock {
+	padding-left: 80px;
+}
 }
