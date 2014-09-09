@@ -36,9 +36,9 @@
           <a href class="dropdown-toggle" data-toggle="dropdown">Happening</a>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Happening Now", happening_index_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Event Calendar", happening_event_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Instagram", happening_instagram_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Pinterest", happening_pinterest_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "Event Calendar", happening_index_path(:anchor => "Event") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Instagram", happening_index_path(:anchor => "Instagram") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Pinterest", happening_index_path(:anchor => "Pinterest") %></li>
           </ul>
         </li>
         <li class="top-nav" ><%= link_to "Harborside Now", harborside_index_path %></li>
@@ -46,31 +46,31 @@
           <a href class="dropdown-toggle" data-toggle="dropdown">Live</a>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Live Now", live_index_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "URL®", live_url_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Retail", live_retail_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "URL®", live_index_path(:anchor => "URL") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Retail", live_index_path(:anchor => "Retail") %></li>
           </ul>
         </li>
         <li class="dropdown top-nav">
           <a href class="dropdown-toggle" data-toggle="dropdown">Arrive</a>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Arrive Now", arrive_index_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Overview", arrive_overview_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Modes", arrive_modes_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Your trip here", arrive_trip_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "Overview", arrive_index_path(:anchor => "Overview") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Modes", arrive_index_path(:anchor => "Modes") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Your trip here", arrive_index_path(:anchor => "Trip") %></li>
           </ul>
         </li>
         <li class="dropdown top-nav">
           <a href class="dropdown-toggle" data-toggle="dropdown">Lease</a>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Lease Now", lease_index_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Office", lease_office_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Retail", lease_retail_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Amenities", lease_amenities_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "NYC Views", lease_views_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Incentives", lease_incentives_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Connectivity", lease_connectivity_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Demographics", lease_demographics_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Plans/Tools", lease_plans_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "Office", lease_index_path(:anchor => "Office") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Retail", lease_index_path(:anchor => "Lease#Retail") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Amenities", lease_index_path(:anchor => "Amenities") %></li>
+            <li class="dropdown-menu-item"><%= link_to "NYC Views", lease_index_path(:anchor => "Views") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Incentives", lease_index_path(:anchor => "Incentives") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Connectivity", lease_index_path(:anchor => "Connectivity") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Demographics", lease_index_path(:anchor => "Demographics") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Plans/Tools", lease_index_path(:anchor => "Plans") %></li>
           </ul>
         </li> 
         <li class="top-nav"><%= link_to "Contact", contact_index_path %></li>
@@ -79,9 +79,12 @@
   </div>
 </div>  
 
-<!-- begin page template insert -->
 
+<!-- begin page template insert -->
+<body>  
   <%= yield %>
+</body>
+
 
 <!-- end page template insert -->
 
@@ -101,9 +104,9 @@
         <li class="dropdown">
           <ul class="footer">
             <li class="first"><%= link_to "Happening", happening_index_path %></li>
-            <li><%= link_to "Event Calendar", happening_event_path %></li>
-            <li><%= link_to "Instagram", happening_instagram_path %></li>
-            <li><%= link_to "Pinterest", happening_pinterest_path %></li>
+            <li><%= link_to "Event Calendar", happening_index_path(:anchor => "Event") %></li>
+            <li><%= link_to "Instagram", happening_index_path(:anchor => "Instagram") %></li>
+            <li><%= link_to "Pinterest", happening_index_path(:anchor => "Pinterest") %></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -113,30 +116,31 @@
         </li>
         <li class="dropdown">
           <ul class="footer">
-            <li class="first"><%= link_to "Live", live_index_path %></li>
-            <li><%= link_to "URL®", live_url_path %></li>
-            <li><%= link_to "Retail", live_retail_path %></li>
+            <li class="first"><%= link_to "Live Now", live_index_path %></li>
+            <li><%= link_to "URL®", live_index_path(:anchor => "URL") %></li>
+            <li><%= link_to "Retail", live_index_path(:anchor => "Retail") %></li>
           </ul>
         </li> 
         <li class="dropdown">
           <ul class="footer">
             <li class="first"><%= link_to "Arrive", arrive_index_path %></li>
-            <li><%= link_to "Overview", arrive_overview_path %></li>
-            <li><%= link_to "Modes", arrive_modes_path %></li>
-            <li><%= link_to "Your trip here", arrive_trip_path %></li>
+            <li><%= link_to "Overview", arrive_index_path(:anchor => "Overview") %></li>
+            <li><%= link_to "Modes", arrive_index_path(:anchor => "Modes") %></li>
+            <li><%= link_to "Your trip here", arrive_index_path(:anchor => "Trip") %></li>
           </ul>
         </li> 
         <li class="dropdown">
           <ul class="footer">
             <li class="first"><%= link_to "Lease", lease_index_path %></li>
             <li><%= link_to "Office", lease_office_path %></li>
-            <li><%= link_to "Retail", lease_retail_path %></li>
-            <li><%= link_to "Amenities", lease_amenities_path %></li>
-            <li><%= link_to "NYC Views", lease_views_path %></li>
-            <li><%= link_to "Incentives", lease_incentives_path %></li>
-            <li><%= link_to "Connectivity", lease_connectivity_path %></li>
-            <li><%= link_to "Demographics", lease_demographics_path %></li>
-            <li><%= link_to "Plans/Tools", lease_plans_path %></li>
+            <li><%= link_to "Office", lease_index_path(:anchor => "Office") %></li>
+            <li><%= link_to "Retail", lease_index_path(:anchor => "Lease#Retail") %></li>
+            <li><%= link_to "Amenities", lease_index_path(:anchor => "Amenities") %></li>
+            <li><%= link_to "NYC Views", lease_index_path(:anchor => "Views") %></li>
+            <li><%= link_to "Incentives", lease_index_path(:anchor => "Incentives") %></li>
+            <li><%= link_to "Connectivity", lease_index_path(:anchor => "Connectivity") %></li>
+            <li><%= link_to "Demographics", lease_index_path(:anchor => "Demographics") %></li>
+            <li><%= link_to "Plans/Tools", lease_index_path(:anchor => "Plans") %></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -155,9 +159,8 @@
          <li><%= link_to (image_tag "icons/tw.png"), "https://twitter.com/MackCaliProp" %></li>
          <li class="first"><%= link_to (image_tag "icons/fb.png"), "https://www.facebook.com/MackCaliRC" %></li>
          <!-- <li><%= link_to (image_tag "icon-tumblr.png"), "" %></li> -->
-
-
         </ul>
+        <div class="a2a_kit a2a_default_style">
         <div class="fineprint">
           <p>© 2014 Mack-Cali Realty Corporation. All Rights Reserved.</p>
           <p><%= link_to "Terms of Service", home_terms_path %> | <%= link_to "Privacy Policy", home_privacy_path %></p>
@@ -167,3 +170,14 @@
 
     <!-- /.navbar-collapse -->
     </div>
+
+<script>
+  $( document ).ready(function() {
+
+      if $(".top-nav").is(":hover") {
+       $(this).addClass("open");
+      };
+
+
+});
+</script>

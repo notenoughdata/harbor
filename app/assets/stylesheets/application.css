@@ -37,6 +37,16 @@
          url("museo700-regular-webfont.svg") format("svg");        
 }
 
+nav.share {display:block;} /* shareable's nav tag */
+nav.share div {float:left;}
+nav.share iframe {border:0; margin-top:0; padding-top:0;} /* if using medium sized buttons */
+#___plusone_0 {font-size: default !important;}
+.fb_iframe_widget span { vertical-align: top; }
+.fb_edge_widget_with_comment { vertical-align: top;}
+.fb-like{display:inline-block}
+* html .fb-like{display:inline}/* ie6 inline block fix*/
+*+html .fb-like{display:inline}/* ie7 inline block fix*/
+
 
 .brand a img {
   margin-right: 50px;
@@ -174,5 +184,5 @@ body.arrive .navbar-bottom {margin-top:-210px; padding-bottom: 210px;}
 body.explore .navbar-bottom {margin-top:-350px; padding-bottom: 350px;}
 body.lease .navbar-bottom {margin-top:-810px; padding-bottom: 0px;}
 
-
+.dropdown-menu li a:hover {background-color:red;}
 

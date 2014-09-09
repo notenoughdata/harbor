@@ -20,3 +20,13 @@
 //= require jquery.imageMask.js
 //= require jquery.easing.1.3.js
 //= require parallax.js
+
+
+(function ($, window, document, undefined)
+{
+
+ if  $(".top-nav").is(":hover") {
+  $(".top-nav").addClass("open");
+ }
+
+})(jQuery, window, document);
