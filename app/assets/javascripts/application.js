@@ -25,8 +25,5 @@
 (function ($, window, document, undefined)
 {
 
- if  $(".top-nav").is(":hover") {
-  $(".top-nav").addClass("open");
- }
 
 })(jQuery, window, document);

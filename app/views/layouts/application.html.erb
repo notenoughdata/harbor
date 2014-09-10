@@ -82,7 +82,7 @@
 
 
 <!-- begin page template insert -->
-<body>  
+<body>
   <%= yield %>
 </body>
 
@@ -156,18 +156,14 @@
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-
-<script>
-  $( document ).ready(function() {
-
-      if $(".top-nav").is(":hover") {
-       $(this).addClass("open");
-      };
-
-
-});
-</script>
-=======
   </footer>
->>>>>>> 64bbddb7e18f7dbd82666d2c30f392f8efd14834
+  <script>
+     $('.dropdown').mousemove(function(e){
+      console.log(e);
+      $(this).addClass('open');
+    }).mouseenter(function(){
+      $(this).addClass('open');
+    }).mouseleave(function(){
+      $(this).removeClass('open');
+    });
+  </script>

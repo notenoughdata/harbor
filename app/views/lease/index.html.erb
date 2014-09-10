@@ -179,13 +179,52 @@
 					<div class="blurb">
 						<h5>Unique retail opportunities<br>are everywhere at harborside.</h5>
 					</div>
+					<div class="hex-bg bistro">
+						<span class="museo">Your Bistro <span class="golong">HERE <span class="underline">NOW</span></span></span>
+					</div>
+					<div class="hex-bg spa">
+						<span class="museo">Your Spa <br><span class="golong">HERE <span class="underline">NOW</span></span></span>
+					</div>
+					<div class="hex-bg boutique">
+						<span class="museo">Your Boutique <span class="golong">HERE <span class="underline">NOW</span></span></span>
+					</div>
 				</div>
 			</div>
 			<div class="rsContent">
 				<%= image_tag "full-width/1920/lease-2-02.jpg", :class=>"rsImg" %>
+				<div data-bottom-top="opacity:0" data-center-top="opacity:1" class="infoBlock center right rsABlock">
+					<h4>Be Here <span class="underline">Now</span></h4>
+					<br>
+					<div class="blurb">
+						<h5>Your employees will enjoy grab-and-go dining<br> options in the harborside food court.</h5>
+					</div>
+				</div>
 			</div>
 			<div class="rsContent">
 				<%= image_tag "full-width/1920/lease-2-03.jpg", :class=>"rsImg " %>
+				<div data-bottom-top="opacity:0" data-center-top="opacity:1" class="infoBlock center right rsABlock">
+					<h4>Be Here <span class="underline">Now</span></h4>
+					<br>
+					<div class="blurb">
+						<h5>Harborside makes running your errands easier with<br> on-site retail and services.</h5>
+					</div>
+					<ul class="brands">
+						<li class="brand"><a href="#"></a></li>
+						<li class="brand"><a href="#"></a></li>
+						<li class="brand"><a href="#"></a></li>
+						<li class="brand"><a href="#"></a></li>
+						<li class="brand"><a href="#"></a></li>
+						<li class="brand"><a href="#"></a></li>
+						<li class="brand"><a href="#"></a></li>
+						<li class="brand"><a href="#"></a></li>
+						<li class="brand"><a href="#"></a></li>
+						<li class="brand"><a href="#"></a></li>
+						<li class="brand"><a href="#"></a></li>
+						<li class="brand"><a href="#"></a></li>
+						<li class="brand"><a href="#"></a></li>
+						<li class="brand"><a href="#"></a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div id="lease-3" class="royalSlider heroSlider rsMinW slider03" data-start="transform:translateY(-30%)" data-end="transform:translateY(-150%)">
@@ -243,7 +282,7 @@
 jQuery(document).ready(function($) {
 	$('.royalSlider').royalSlider({
 		arrowsNav: true,
-		loop: false,
+		loop: true,
 		controlNavigation: 'bullets',
 		keyboardNavEnabled: true,
 		controlsInside: true,
@@ -257,7 +296,12 @@ jQuery(document).ready(function($) {
 		navigateByClick: true,
 		startSlideId: 0,
 		slidesSpacing:0,
-		autoPlay: false,
+		autoPlay: {
+		// autoplay options go gere
+		enabled: true,
+		pauseOnHover: true,
+		delay: 100
+	},
 		transitionType:'move',
 		globalCaption: false,
 		hasDrag: false,
@@ -281,14 +325,14 @@ $( document ).ready( function() {
 } );
 </script>
 <script type="text/javascript">
-skrollr.init({
-	smoothScrolling: true,
-	edgeStrategy: 'set',
-	forceHeight: true,
-	easing: {
-		vibrate: function(p) {
-			return Math.sin(p * 10 * Math.PI);
-		}
-	}
-});
+// skrollr.init({
+// 	smoothScrolling: true,
+// 	edgeStrategy: 'set',
+// 	forceHeight: true,
+// 	easing: {
+// 		vibrate: function(p) {
+// 			return Math.sin(p * 10 * Math.PI);
+// 		}
+// 	}
+// });
 </script>
