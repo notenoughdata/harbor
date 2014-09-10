@@ -23,7 +23,7 @@
       <ul class="nav navbar-nav">
         <li class="brand"><a class="navbar-brand"><%= link_to image_tag("harborside.png"), root_path %></a></li>
         <li class="dropdown top-nav">
-          <a href class="dropdown-toggle" data-toggle="dropdown">Explore</a>
+          <%= link_to "Explore", explore_index_path %>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Explore Now", explore_index_path %></li>
             <li class="dropdown-menu-item"><%= link_to "Art",explore_index_path(:anchor => "Art") %></li>
@@ -34,7 +34,7 @@
           </ul>
         </li>
         <li class="dropdown top-nav">
-          <a href class="dropdown-toggle" data-toggle="dropdown">Happening</a>
+          <%= link_to "Happening", happening_index_path %>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Happening Now", happening_index_path %></li>
             <li class="dropdown-menu-item"><%= link_to "Event Calendar", happening_index_path(:anchor => "Event") %></li>
@@ -44,7 +44,7 @@
         </li>
         <li class="top-nav" ><%= link_to "Harborside Now", harborside_index_path %></li>
         <li class="dropdown top-nav">
-          <a href class="dropdown-toggle" data-toggle="dropdown">Live</a>
+          <%= link_to "Live", live_index_path %>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Live Now", live_index_path %></li>
             <li class="dropdown-menu-item"><%= link_to "URL®", live_index_path(:anchor => "URL") %></li>
@@ -52,7 +52,7 @@
           </ul>
         </li>
         <li class="dropdown top-nav">
-          <a href class="dropdown-toggle" data-toggle="dropdown">Arrive</a>
+          <%= link_to "Arrive", arrive_index_path %>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Arrive Now", arrive_index_path %></li>
             <li class="dropdown-menu-item"><%= link_to "Overview", arrive_index_path(:anchor => "Overview") %></li>
@@ -61,7 +61,7 @@
           </ul>
         </li>
         <li class="dropdown top-nav">
-          <a href class="dropdown-toggle" data-toggle="dropdown">Lease</a>
+          <%= link_to "Lease", lease_index_path %>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Lease Now", lease_index_path %></li>
             <li class="dropdown-menu-item"><%= link_to "Office", lease_index_path(:anchor => "Office") %></li>
@@ -158,10 +158,8 @@
     </div>
   </footer>
   <script>
-     $('.dropdown').mousemove(function(e){
-      console.log(e);
-      $(this).addClass('open');
-    }).mouseenter(function(){
+
+     $('.dropdown').mouseenter(function(){
       $(this).addClass('open');
     }).mouseleave(function(){
       $(this).removeClass('open');
