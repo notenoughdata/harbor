@@ -2,13 +2,14 @@
 <html>
 <head>
   <title>Harborside</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 
 
-<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -22,7 +23,7 @@
       <ul class="nav navbar-nav">
         <li class="brand"><a class="navbar-brand"><%= link_to image_tag("harborside.png"), root_path %></a></li>
         <li class="dropdown top-nav">
-          <a href class="dropdown-toggle" data-toggle="dropdown">Explore</a>
+          <%= link_to "Explore", explore_index_path %>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Explore Now", explore_index_path %></li>
             <li class="dropdown-menu-item"><%= link_to "Art",explore_index_path(:anchor => "Art") %></li>
@@ -33,62 +34,63 @@
           </ul>
         </li>
         <li class="dropdown top-nav">
-          <a href class="dropdown-toggle" data-toggle="dropdown">Happening</a>
+          <%= link_to "Happening", happening_index_path %>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Happening Now", happening_index_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Event Calendar", happening_event_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Instagram", happening_instagram_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Pinterest", happening_pinterest_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "Event Calendar", happening_index_path(:anchor => "Event") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Instagram", happening_index_path(:anchor => "Instagram") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Pinterest", happening_index_path(:anchor => "Pinterest") %></li>
           </ul>
         </li>
         <li class="top-nav" ><%= link_to "Harborside Now", harborside_index_path %></li>
         <li class="dropdown top-nav">
-          <a href class="dropdown-toggle" data-toggle="dropdown">Live</a>
+          <%= link_to "Live", live_index_path %>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Live Now", live_index_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "URL®", live_url_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Retail", live_retail_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "URL®", live_index_path(:anchor => "URL") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Retail", live_index_path(:anchor => "Retail") %></li>
           </ul>
         </li>
         <li class="dropdown top-nav">
-          <a href class="dropdown-toggle" data-toggle="dropdown">Arrive</a>
+          <%= link_to "Arrive", arrive_index_path %>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Arrive Now", arrive_index_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Overview", arrive_overview_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Modes", arrive_modes_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Your trip here", arrive_trip_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "Overview", arrive_index_path(:anchor => "Overview") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Modes", arrive_index_path(:anchor => "Modes") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Your trip here", arrive_index_path(:anchor => "Trip") %></li>
           </ul>
         </li>
         <li class="dropdown top-nav">
-          <a href class="dropdown-toggle" data-toggle="dropdown">Lease</a>
+          <%= link_to "Lease", lease_index_path %>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Lease Now", lease_index_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Office", lease_office_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Retail", lease_retail_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Amenities", lease_amenities_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "NYC Views", lease_views_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Incentives", lease_incentives_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Connectivity", lease_connectivity_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Demographics", lease_demographics_path %></li>
-            <li class="dropdown-menu-item"><%= link_to "Plans/Tools", lease_plans_path %></li>
+            <li class="dropdown-menu-item"><%= link_to "Office", lease_index_path(:anchor => "Office") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Retail", lease_index_path(:anchor => "Lease#Retail") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Amenities", lease_index_path(:anchor => "Amenities") %></li>
+            <li class="dropdown-menu-item"><%= link_to "NYC Views", lease_index_path(:anchor => "Views") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Incentives", lease_index_path(:anchor => "Incentives") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Connectivity", lease_index_path(:anchor => "Connectivity") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Demographics", lease_index_path(:anchor => "Demographics") %></li>
+            <li class="dropdown-menu-item"><%= link_to "Plans/Tools", lease_index_path(:anchor => "Plans") %></li>
           </ul>
-        </li> 
+        </li>
         <li class="top-nav"><%= link_to "Contact", contact_index_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
-</div>  
+</div>
+
 
 <!-- begin page template insert -->
-
+<body>
   <%= yield %>
+</body>
+
 
 <!-- end page template insert -->
-
-  <div class="navbar-default navbar-bottom">
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
+  <footer>
+    <div class="row">
+      <div class="col-xs-4">
           <ul class="footer">
             <li class="first"><%= link_to "Explore", explore_index_path %></li>
             <li><%= link_to "Art", explore_index_path(:anchor => "Art") %></li>
@@ -97,56 +99,46 @@
             <li><%= link_to "People", explore_index_path(:anchor => "People") %></li>
             <li><%= link_to "Press", explore_index_path(:anchor => "Press") %></li>
           </ul>
-        </li>
-        <li class="dropdown">
           <ul class="footer">
             <li class="first"><%= link_to "Happening", happening_index_path %></li>
-            <li><%= link_to "Event Calendar", happening_event_path %></li>
-            <li><%= link_to "Instagram", happening_instagram_path %></li>
-            <li><%= link_to "Pinterest", happening_pinterest_path %></li>
+            <li><%= link_to "Event Calendar", happening_index_path(:anchor => "Event") %></li>
+            <li><%= link_to "Instagram", happening_index_path(:anchor => "Instagram") %></li>
+            <li><%= link_to "Pinterest", happening_index_path(:anchor => "Pinterest") %></li>
           </ul>
-        </li>
-        <li class="dropdown">
           <ul class="footer">
             <li class="first"><%= link_to "Harborside Now", harborside_index_path %></li>
           </ul>
-        </li>
-        <li class="dropdown">
+      </div>
+      <div class="col-xs-4">
           <ul class="footer">
-            <li class="first"><%= link_to "Live", live_index_path %></li>
-            <li><%= link_to "URL®", live_url_path %></li>
-            <li><%= link_to "Retail", live_retail_path %></li>
+            <li class="first"><%= link_to "Live Now", live_index_path %></li>
+            <li><%= link_to "URL®", live_index_path(:anchor => "URL") %></li>
+            <li><%= link_to "Retail", live_index_path(:anchor => "Retail") %></li>
           </ul>
-        </li> 
-        <li class="dropdown">
           <ul class="footer">
             <li class="first"><%= link_to "Arrive", arrive_index_path %></li>
-            <li><%= link_to "Overview", arrive_overview_path %></li>
-            <li><%= link_to "Modes", arrive_modes_path %></li>
-            <li><%= link_to "Your trip here", arrive_trip_path %></li>
+            <li><%= link_to "Overview", arrive_index_path(:anchor => "Overview") %></li>
+            <li><%= link_to "Modes", arrive_index_path(:anchor => "Modes") %></li>
+            <li><%= link_to "Your trip here", arrive_index_path(:anchor => "Trip") %></li>
           </ul>
-        </li> 
-        <li class="dropdown">
           <ul class="footer">
             <li class="first"><%= link_to "Lease", lease_index_path %></li>
             <li><%= link_to "Office", lease_office_path %></li>
-            <li><%= link_to "Retail", lease_retail_path %></li>
-            <li><%= link_to "Amenities", lease_amenities_path %></li>
-            <li><%= link_to "NYC Views", lease_views_path %></li>
-            <li><%= link_to "Incentives", lease_incentives_path %></li>
-            <li><%= link_to "Connectivity", lease_connectivity_path %></li>
-            <li><%= link_to "Demographics", lease_demographics_path %></li>
-            <li><%= link_to "Plans/Tools", lease_plans_path %></li>
+            <li><%= link_to "Office", lease_index_path(:anchor => "Office") %></li>
+            <li><%= link_to "Retail", lease_index_path(:anchor => "Lease#Retail") %></li>
+            <li><%= link_to "Amenities", lease_index_path(:anchor => "Amenities") %></li>
+            <li><%= link_to "NYC Views", lease_index_path(:anchor => "Views") %></li>
+            <li><%= link_to "Incentives", lease_index_path(:anchor => "Incentives") %></li>
+            <li><%= link_to "Connectivity", lease_index_path(:anchor => "Connectivity") %></li>
+            <li><%= link_to "Demographics", lease_index_path(:anchor => "Demographics") %></li>
+            <li><%= link_to "Plans/Tools", lease_index_path(:anchor => "Plans") %></li>
           </ul>
-        </li>
-        <li class="dropdown">
           <ul class="footer">
             <li class="first"><%= link_to "Contact", contact_index_path %></li>
           </ul>
-        </li>        
-      </ul>
-      <div id="social">
-        <ul class="navbar-right nav navbar-nav social-nav">
+      </div>
+      <div class="col-xs-4">
+          <ul class="social-nav">
          <!-- <li class="social">Social</li> -->
          <li><%= link_to (image_tag "icons/pi.png"), "http://www.pinterest.com/harborsidejc/be-here-now/" %></li>
          <li><%= link_to (image_tag "icons/li.png"), "https://www.linkedin.com/company/104717?trk=tyah&trkInfo=tarId%3A1409705871606%2Ctas%3Amack-cali%2Cidx%3A2-1-6" %></li>
@@ -155,15 +147,21 @@
          <li><%= link_to (image_tag "icons/tw.png"), "https://twitter.com/MackCaliProp" %></li>
          <li class="first"><%= link_to (image_tag "icons/fb.png"), "https://www.facebook.com/MackCaliRC" %></li>
          <!-- <li><%= link_to (image_tag "icon-tumblr.png"), "" %></li> -->
-
-
         </ul>
+        <div class="a2a_kit a2a_default_style">
         <div class="fineprint">
           <p>© 2014 Mack-Cali Realty Corporation. All Rights Reserved.</p>
           <p><%= link_to "Terms of Service", home_terms_path %> | <%= link_to "Privacy Policy", home_privacy_path %></p>
           <%= link_to (image_tag "mack-cali.png"), "http://www.mack-cali.com" %>
         </div>
       </div>
-
-    <!-- /.navbar-collapse -->
     </div>
+  </footer>
+  <script>
+
+     $('.dropdown').mouseenter(function(){
+      $(this).addClass('open');
+    }).mouseleave(function(){
+      $(this).removeClass('open');
+    });
+  </script>

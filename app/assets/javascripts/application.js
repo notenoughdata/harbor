@@ -20,3 +20,10 @@
 //= require jquery.imageMask.js
 //= require jquery.easing.1.3.js
 //= require parallax.js
+
+
+(function ($, window, document, undefined)
+{
+
+
+})(jQuery, window, document);

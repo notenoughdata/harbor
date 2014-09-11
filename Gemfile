@@ -12,6 +12,10 @@ gem 'jbuilder', '~> 1.2'
 gem 'simple_form'
 
 
+# gem 'shareable'
+# gem 'social-share-button'
+
+
 gem 'bootstrap-sass', '~> 3.0.3.0'
 gem 'autoprefixer-rails'
 
