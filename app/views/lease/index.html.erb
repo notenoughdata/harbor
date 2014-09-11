@@ -3,17 +3,19 @@
 
 	<div id="lease-0" class="royalSlider heroSlider rsMinW slider00">
 	  <div class="rsContent rsNoDrag">
-	  	 <div class="titleBlock infoBlockLeftBlack rsABlock"> 
-	    	<h4>BE HERE NOW</h4>
-	    	<div class="hexBlock" id="topHexBlock">
+	  	 <div class="bContainer">
+		  	 <div class="titleBlock infoBlockLeftBlack rsABlock txtCent"> 
+		    	<h4>BE HERE NOW</h4>
+		    	<div class="hexBlock" id="topHexBlock">
 					<%= image_tag "hexagon.png", :class => "topHex" , :data=>{:start=>"transform:translateX(0%)", :end=>"transform:translateX(0%)"}%>
 					<%= image_tag "hexagon.png", :class => "topHex" %>
-					</div>
-					<div class="hexBlock" id="bottomHexBlock">
+				</div>
+				<div class="hexBlock" id="bottomHexBlock">
 					<%= image_tag "hexagon.png", :class => "bottomHex"  %>
 					<%= image_tag "hexagon.png", :class => "bottomHex"  %>
 					<%= image_tag "hexagon.png", :class => "bottomHex"  %>
-					</div>
+				</div>
+		   	 </div>
 	   	 </div>
 
 
@@ -22,7 +24,7 @@
 	</div>
 
 
-	<div id="lease-1" class="royalSlider heroSlider rsMinW slider01" data-start="transform:translateY(0%)" data-end="transform:translateY(-120%)">
+	<div id="lease-1" class="royalSlider heroSlider rsMinW slider01">
 	  <div class="rsContent">
 	  	<%= image_tag "full-width/1920/lease-1-01.jpg", :class=>"rsImg" %>
 	  </div>
@@ -32,7 +34,7 @@
 	  <div class="rsContent">
 	  	<%= image_tag "full-width/1920/lease-1-03.jpg", :class=>"rsImg" %>
 	  </div>
-	  <div class="rsContent">
+	  <!-- <div class="rsContent">
 	  	<%= image_tag "full-width/lease-1-04.jpg", :class=>"rsImg" %>
 	  </div>
 	  <div class="rsContent">
@@ -52,10 +54,10 @@
 	  </div>
 	  <div class="rsContent">
 	  	<%= image_tag "full-width/lease-1-10.jpg", :class=>"rsImg" %>
-	  </div>	  
+	  </div> -->	  
 	</div>
 
-	<div id="lease-2" class="royalSlider heroSlider rsMinW slider02" data-start="transform:translateY(0%)" data-end="transform:translateY(-200%)">
+	<div id="lease-2" class="royalSlider heroSlider rsMinW slider02" data-start="transform:translateY(0%)" data-end="transform:translateY(-120%)">
 	  <div class="rsContent">
 	  	<%= image_tag "full-width/1920/lease-2-01.jpg", :class=>"rsImg mySelector" %>
 	    <div class="infoBlock infoBlockLeftBlack rsABlock">
@@ -71,7 +73,7 @@
 	  </div>
 	</div>
 
-	<div id="lease-3" class="royalSlider heroSlider rsMinW slider03" data-start="transform:translateY(-30%)" data-end="transform:translateY(-150%)">
+	<div id="lease-3" class="royalSlider heroSlider rsMinW slider03" data-start="transform:translateY(0%)" data-end="transform:translateY(-100%)">
 	  <div class="rsContent">
 	  	<%= image_tag "full-width/lease-3-01.jpg", :class=>"rsImg" %>
 	  </div>
@@ -79,17 +81,17 @@
 	  	<%= image_tag "full-width/lease-3-02.jpg", :class=>"rsImg" %>
 	  </div>
 	  <div class="rsContent">
-	  	<%= image_tag "full-width/lease-3-03.jpg", :class=>"rsImg mySelector1" %>
+	  	<%= image_tag "full-width/lease-3-03.jpg", :class=>"rsImg" %>
 	  </div>
 	</div>
 
-	<div id="lease-4" class="royalSlider heroSlider rsMinW slider04" data-start="transform:translateY(-40%)" data-end="transform:translateY(-200%)">
+	<div id="lease-4" class="royalSlider heroSlider rsMinW slider04" data-start="transform:translateY(0%)" data-end="transform:translateY(-140%)">
 	  <div class="rsContent rsNoDrag">
 	  	<%= image_tag "full-width/lease-4.jpg", :class=>"rsImg mySelector" %>
 	  </div>
 	</div>
 
-	<div id="lease-5" class="royalSlider heroSlider rsMinW slider05" data-start="transform:translateY(-50%)" data-end="transform:translateY(-120%)">
+	<div id="lease-5" class="royalSlider heroSlider rsMinW slider05" data-start="transform:translateY(-20%)" data-end="transform:translateY(-90%)">
 	  <div class="rsContent">
 	  	<%= image_tag "full-width/lease-5-01.jpg", :class=>"rsImg" %>
 	  </div>
@@ -116,13 +118,13 @@
 	</div>
 -->
 
-	<div id="lease-7" class="royalSlider heroSlider rsMinW slider07" data-start="transform:translateY(-30%)" data-end="transform:translateY(-50%)">
+	<div id="lease-7" class="royalSlider heroSlider rsMinW slider07" data-start="transform:translateY(0%)" data-end="transform:translateY(-160%)">
 	  <div class="rsContent rsNoDrag">
 	  	<%= image_tag "full-width/lease-7.jpg", :class=>"rsImg mySelector" %>
 	    </div>
 	</div>
 
-	<div id="lease-8" class="royalSlider heroSlider rsMinW slider08" data-start="transform:translateY(-50%)" data-end="transform:translateY(0%)">
+	<div id="lease-8" class="royalSlider heroSlider rsMinW slider08" data-start="transform:translateY(0%)" data-end="transform:translateY(-120%)">
 	  <div class="rsContent rsNoDrag">
 	  	<%= image_tag "full-width/lease-8.jpg", :class=>"rsImg mySelector1" %>
 	    </div>
@@ -132,6 +134,7 @@
 
 	<script type="text/javascript">
 	jQuery(document).ready(function($) {
+	  jQuery.rsCSS3Easing.easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
 	  $('.royalSlider').royalSlider({
 	    arrowsNav: true,
 	    loop: false,
@@ -147,13 +150,18 @@
 	    navigateByClick: true,
 	    startSlideId: 0,
 	    slidesSpacing:0,
-	    autoPlay: false,
+	    autoPlay: true,
 	    transitionType:'move',
 	    globalCaption: false,
 	    hasDrag: false,
 	    deeplinking: {
 	      enabled: true,
 	      change: false
+	    },
+	     block: {
+	      delay: 400,
+	      fadeEffect: true,
+		moveEffect: 'left'
 	    },
 	    /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
 	    imgWidth: 1920,
