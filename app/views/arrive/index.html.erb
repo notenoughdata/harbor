@@ -17,6 +17,15 @@
 	</div>
 
 
+<<<<<<< HEAD
+=======
+
+<div class="overlay" onClick="style.pointerEvents='none'"></div>
+<div class="fluid-wrapper">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6047.831933079441!2d-74.03426217657886!3d40.71986636985176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250aac2ae03db%3A0x99763861d1ded6f4!2sHarborside!5e0!3m2!1sen!2sus!4v1410495670928" width="600" height="450" frameborder="0" style="border:0"></iframe> </div>
+
+<!--	<div id="map-canvas"/> </div> -->
+>>>>>>> FETCH_HEAD
 
 	<div id="map-canvas"/></div>
     <script type="text/javascript"
@@ -59,8 +68,16 @@
         var mapOptions = {
           center: new google.maps.LatLng(40.7174704, -74.0235612),
           scrollwheel: false,
-          zoom: 16,
+          zoom: 15,
+          disableDefaultUI: true,
+          panel: document.getElementById('directions')
         };
+       /* function direcshun() {
+        	map: mapObject,
+        	panel: document.getElementById('directions'),
+        	directions: response
+        } */
+        /* short url of harborside map =https://goo.gl/maps/Jm4AU */
         var map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
       }
