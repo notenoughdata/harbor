@@ -1,0 +1,18 @@
+body.contact div[id^="contact-"] {
+  width: 100%;
+  color: #000; }
+body.contact .fullWidth {
+  max-width: 1920px;
+  margin: 0 auto 24px; }
+@media screen and (min-width: 960px) and (min-height: 660px) {
+  body.contact .heroSlider .rsOverflow,
+  body.contact .royalSlider.heroSlider {
+    height: 700px !important; } }
+@media screen and (min-width: 960px) and (min-height: 1000px) {
+  body.contact .heroSlider .rsOverflow,
+  body.contact .royalSlider.heroSlider {
+    height: 700px !important; } }
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  body.contact .royalSlider.heroSlider,
+  body.contact .royalSlider.heroSlider .rsOverflow {
+    height: 300px !important; } }

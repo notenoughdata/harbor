@@ -1,0 +1,254 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require royalslider.css
+ *= require_self
+ *= require_tree .
+ */
+
+
+@font-face {
+    font-family: "GoLongRegular";
+    src: font-url("golong-webfont.eot") format("eot"),
+         font-url("golong-webfont.woff") format("woff"),
+         font-url("golong-webfont.ttf") format("truetype"),
+         font-url("golong-webfont.svg") format("svg");
+}
+
+@font-face {
+    font-family: "Museo";
+    src: font-url("museo300-regular-webfont.eot") format("eot"),
+         font-url("museo300-regular-webfont.woff") format("woff"),
+         font-url("museo300-regular-webfont.ttf") format("truetype"),
+         font-url("museo300-regular-webfont.svg") format("svg");
+}
+@font-face {
+    font-family: "MuseoBold";
+    src: font-url("museo700-regular-webfont.eot") format("eot"),
+         font-url("museo700-regular-webfont.woff") format("woff"),
+         font-url("museo700-regular-webfont.ttf") format("truetype"),
+         font-url("museo700-regular-webfont.svg") format("svg");
+}
+
+/* Fix for Skrollr weirdness */
+body{height:100% !important;}
+
+.golong {
+  font-family: "GoLongRegular";
+}
+.museo{
+  font-family: "Museo";
+}
+
+.nav.navbar-nav{
+  .top-nav{
+    margin-top:60px !important;
+  }
+}
+
+.brand a img {
+  margin: -6px 25px 0 -36px !important;
+  width:180px !important;
+}
+
+.navbar-right {
+  padding-right: 25px;
+}
+
+/* RoyalSlider Overrides */
+@media screen and (min-width:960px) and (min-height:660px) {
+  .heroSlider .rsOverflow,
+  .royalSlider.heroSlider {
+      height: 100vh !important;
+  }
+}
+@media screen and (min-width:960px) and (min-height:1000px) {
+    .heroSlider .rsOverflow,
+    .royalSlider.heroSlider {
+        height: 100vh !important;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  .royalSlider.heroSlider,
+  .royalSlider.heroSlider .rsOverflow {
+    height: 100vh !important;
+  }
+}
+
+footer:before{
+  width: 0;
+  height: 0;
+  border-left: 100vw solid transparent;
+  border-right: 0px solid transparent;
+
+  border-bottom: 60px solid black;
+  content:'';
+  position:relative;
+  bottom:75px;
+}
+
+footer {
+    .row div{
+        padding-top:12px;
+    }
+    ul.footer{
+        float:left;
+        li{
+            a{
+                color:white;
+                font-size:17px;
+            }
+        }
+    }
+    ul.social-nav{
+        margin-right:25px;
+        float:none;
+        li{
+            float:right;
+            list-style-type:none;
+            a{
+                padding:0;
+            }
+        }
+    }
+    .fineprint {
+        margin-right:25px;
+        float:right;
+  margin-top:12px;
+  text-align: right;
+  line-height: 1.5;
+  color:white;
+  font-size: 10px;
+}
+.fineprint a {
+  color:white;
+  text-decoration: underline;
+}
+.fineprint img {
+  margin-top:5px;
+}
+}
+
+ul.footer {
+  list-style-type: none;
+  padding: 15px 0px;
+  margin-left:1em;
+}
+
+ul.footer li a {
+  color: #777;
+  font-family: "GoLongRegular";
+}
+
+ul.footer li {
+  text-transform: none;
+}
+
+.first {
+  text-transform: uppercase !important;
+}
+
+ul.footer li a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+li.social {
+  padding-top: 15px;
+  color: white;
+  font-family: "GoLongRegular";
+}
+
+
+.dropdown-menu-item {
+  padding: 0;
+  margin: 0;
+}
+
+
+.top-mask {
+  /* *** For Firefox use mask *** */
+  /* *** Note that we use an ID selector here #logo_mask  *** */
+  /* *** which is the same as the ID we defined in the SVG mask *** */
+  /*mask: url(masks/top.svg#logo_mask);*/
+  /* *** For webkit use -webkit-mask-image *** */
+  /*-webkit-mask-image: url(masks/top1920x1400.svg);*/
+  /*-webkit-mask-box-image: url(masks/top1920x1400.svg);*/
+  /*z-index: 999;*/
+}
+
+.slant-right-parent {
+  .slant-right-img{
+
+  }
+}
+
+.slant-left-parent {
+  .slant-right-img{
+
+  }
+}
+
+// .slider00 .rsOverflow {
+//   margin-top: 0;
+// }
+// .slider01 .rsOverflow {
+//   margin-top: -70px;
+// }
+// .slider02 .rsOverflow {
+//   margin-top: -140px;
+// }
+// .slider03 .rsOverflow {
+//   margin-top: -210px;
+// }
+// .slider04 .rsOverflow {
+//   margin-top: -280px;
+// }
+// .slider05 .rsOverflow {
+//   margin-top: -350px;
+// }
+// .slider06 .rsOverflow {
+//   margin-top: -420px;
+// }
+// .slider07 .rsOverflow {
+//   margin-top: -490px;
+// }
+// .slider08 .rsOverflow {
+//   margin-top: -560px;
+// }
+// .slider09 .rsOverflow {
+//   margin-top: -730px;
+// }
+// .slider10 .rsOverflow {
+//   margin-top: -810px;
+// }
+
+/* temporary hardcoded footer margins */
+/* set the margin top and padding bottom of each page footer below to the, */
+/* margin above... with sliderXX equalling the LAST slider in the assocaited HTML */
+
+body.live .navbar-bottom {margin-top:-230px; padding-bottom: 230px;}
+body.harborside .navbar-bottom {margin-top:-490px; padding-bottom: 490px;}
+body.happening .navbar-bottom {margin-top:-140px; padding-bottom: 140px;}
+body.arrive .navbar-bottom {margin-top:-210px; padding-bottom: 210px;}
+body.explore .navbar-bottom {margin-top:-350px; padding-bottom: 350px;}
+body.lease .navbar-bottom {margin-top:-810px; padding-bottom: 0px;}
+
+.top-nav.current {
+  border: 2px solid white !important;
+  background-color: #000 !important;
+  a{
+    background-color:none;
+    color:white;
+  }
+}
+
+body.new-plans{margin-top:230px;}
+body.new-press{margin-top:230px;}

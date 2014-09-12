@@ -1,0 +1,84 @@
+// Place all the styles related to the live controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body.live {
+	// background-color:#000;
+	div[id^="live-"] {
+	  width: 100%;
+	  color: #000;
+	}
+	// all the text blocks below are placeholder and only viewable on live/url
+	.coloredBlock {
+	  padding: 12px;
+	  background: rgba(255,0,0,0.6);
+	  color: #FFF;
+	   width: 200px;
+	   left: 20%;
+	   top: 5%;
+	}
+	.infoBlock {
+	  position: absolute;
+	  top: 30px;
+	  right: 30px;
+	  left: auto;
+	  max-width: 35%;
+	  padding-bottom: 0;
+	  // background: #FFF;
+	  // background: rgba(255, 255, 255, 0.8);
+	  overflow: hidden;
+	  padding: 20px;
+	}
+	.infoBlockLeftBlack {
+	  color: #FFF;
+	  left: 50%;
+	  right: auto;
+	}
+	.infoBlock h4 {
+	  line-height: 1.2;
+	  margin: 0;
+	  font-family: "GoLongRegular";
+	  text-transform: uppercase;
+	  font-size: 50px;
+	  letter-spacing: -1px;
+	  background: #000;
+	  background: rgba(0,0,0,0.75);
+	  border:2px solid #fff;
+	  padding:5px;
+	  text-align: center;
+	}
+	.infoBlock p {
+	  font-size: 16px;
+	  line-height: 1.2;
+	  font-family: "Museo";
+	  margin:-2px 0 0 80px;
+	  background: #000;
+	  background: rgba(0,0,0,0.75);
+	  border:2px solid #fff;
+	  padding:10px;
+	}
+	.infoBlock a {
+	  color: #FFF;
+	  text-decoration: underline;
+	}
+	.photosBy {
+	  position: absolute;
+	  line-height: 24px;
+	  font-size: 12px;
+	  background: #FFF;
+	  color: #000;
+	  padding: 0px 10px;
+	  position: absolute;
+	  left: 12px;
+	  bottom: 12px;
+	  top: auto;
+	  border-radius: 2px;
+	  z-index: 25;
+	}
+	.photosBy a {
+	  color: #000;
+	}
+	.fullWidth {
+	  max-width: 1920px;
+	  margin: 0 auto 24px;
+	}
+}

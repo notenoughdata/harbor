@@ -1,0 +1,34 @@
+body.home div[id^="home-"] {
+  width: 100%;
+  color: #000; }
+body.home .infoBlock {
+  width: 100%;
+  padding: 20px;
+  color: #FFF; }
+body.home .infoBlock h1 {
+  font-family: "GoLongRegular";
+  text-transform: uppercase;
+  font-size: 120px;
+  margin: 150px 0 0 0;
+  letter-spacing: -2px;
+  font-stretch: condensed;
+  line-height: 1.2;
+  padding-bottom: 3px;
+  text-align: center; }
+body.home .infoBlock p {
+  font-size: 24px;
+  line-height: .9em;
+  font-weight: bold;
+  margin: 4px 0 0;
+  font-family: "Museo";
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  text-align: center; }
+body.home .infoBlock a {
+  color: #FFF;
+  text-decoration: underline;
+  text-align: center;
+  width: 100%; }
+body.home .fullWidth {
+  max-width: 1920px;
+  margin: 0 auto 24px; }

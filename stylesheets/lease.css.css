@@ -1,0 +1,273 @@
+body.lease {
+  /*type*/ }
+  body.lease #lease-0, body.lease #lease-1, body.lease #lease-2, body.lease #lease-3, body.lease #lease-4, body.lease #lease-5, body.lease #lease-6, body.lease #lease-7, body.lease #lease-8, body.lease #full-width-slider {
+    width: 100%;
+    color: #000; }
+  body.lease .titleBlock {
+    position: absolute;
+    margin: auto;
+    overflow: hidden;
+    color: #FFF;
+    left: 50%;
+    margin-left: -248px;
+    top: 160px;
+    max-width: 497px; }
+  body.lease h4 {
+    font-weight: normal;
+    font-family: "GoLongRegular";
+    text-transform: uppercase;
+    font-size: 101px;
+    letter-spacing: -1px;
+    line-height: 1.5em;
+    margin: 0px; }
+    body.lease h4 span.underline {
+      border-bottom: 15px solid white; }
+  body.lease h4 i {
+    background: url(koBG.png) repeat;
+    padding: 10px 10px 0 10px;
+    border: 1px solid #fff; }
+  body.lease .coloredBlock {
+    padding: 12px;
+    background: rgba(255, 0, 0, 0.6);
+    color: #FFF;
+    width: 200px;
+    left: 20%;
+    top: 5%; }
+  body.lease .infoBlock {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    left: auto;
+    max-width: 35%;
+    padding-bottom: 0;
+    color: #FFF;
+    overflow: hidden;
+    padding: 20px; }
+  body.lease .infoBlock.center {
+    top: 134px;
+    left: 50%;
+    margin-left: -30%;
+    max-width: 80%;
+    width: 60%; }
+    body.lease .infoBlock.center h4 {
+      padding: 10px 5px 5px 5px;
+      float: left; }
+      body.lease .infoBlock.center h4 span.underline {
+        border-bottom: 5px white solid; }
+    body.lease .infoBlock.center span.address {
+      text-transform: uppercase;
+      margin-top: 40px;
+      padding-left: 14px;
+      font-family: "Museo";
+      float: left;
+      font-size: 1.7em; }
+    body.lease .infoBlock.center .blurb {
+      margin-top: 72px;
+      margin-bottom: 8px; }
+      body.lease .infoBlock.center .blurb h5 {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-family: "Museo"; }
+    body.lease .infoBlock.center .blurb_detail {
+      overflow: auto;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      border: 2px solid #fff;
+      padding-bottom: 30px; }
+      body.lease .infoBlock.center .blurb_detail p {
+        float: left;
+        width: 50%;
+        font-size: 12px;
+        line-height: 1.2;
+        font-family: "Museo";
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.2;
+        padding: 10px; }
+      body.lease .infoBlock.center .blurb_detail img {
+        float: right;
+        width: 40%;
+        margin-right: 5%;
+        margin-top: 1em; }
+      body.lease .infoBlock.center .blurb_detail span.plansspec {
+        font-family: "GoLongRegular";
+        padding: 2px 3px;
+        position: absolute;
+        right: 21px;
+        bottom: 20px;
+        font-size: 1.5em;
+        background-color: white;
+        color: #12617b;
+        text-transform: uppercase; }
+    body.lease .infoBlock.center .hex-bg {
+      position: relative;
+      padding-top: 40px;
+      background-image: url(hexagon.png);
+      background-size: 100% 100%;
+      height: 120px;
+      width: 100px;
+      color: black;
+      font-size: 1.4em;
+      text-align: center; }
+      body.lease .infoBlock.center .hex-bg span.underline {
+        border-bottom: 2px black solid; }
+      body.lease .infoBlock.center .hex-bg.spa {
+        top: -110px;
+        left: 400px; }
+      body.lease .infoBlock.center .hex-bg.boutique {
+        padding-top: 26px;
+        top: -122px;
+        left: 600px; }
+      body.lease .infoBlock.center .hex-bg.bistro {
+        left: 139px;
+        top: 130px; }
+    body.lease .infoBlock.center ul.brands {
+      margin-left: 0;
+      list-style-type: none;
+      width: 100%; }
+      body.lease .infoBlock.center ul.brands li.brand {
+        width: 25%;
+        height: 100px;
+        float: left; }
+        body.lease .infoBlock.center ul.brands li.brand a {
+          background-position: center center;
+          background-repeat: no-repeat;
+          border: 1px solid white;
+          width: 90%;
+          height: 90%;
+          background-color: rgba(0, 0, 0, 0.6);
+          display: block; }
+  body.lease .infoBlock.center.right {
+    text-align: right; }
+    body.lease .infoBlock.center.right h4 {
+      float: right; }
+    body.lease .infoBlock.center.right .blurb {
+      float: none;
+      text-align: right; }
+  body.lease .infoBlockLeftBlack {
+    color: #FFF;
+    right: auto; }
+  body.lease .infoBlock h4 {
+    line-height: 1.2;
+    margin: 0;
+    font-family: "GoLongRegular";
+    text-transform: uppercase;
+    font-size: 42px;
+    letter-spacing: -1px;
+    background: #000;
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid #fff;
+    padding: 5px;
+    text-align: center; }
+  body.lease .infoBlock a {
+    color: #FFF;
+    text-decoration: underline; }
+  body.lease .photosBy {
+    position: absolute;
+    line-height: 24px;
+    font-size: 12px;
+    background: #FFF;
+    color: #000;
+    padding: 0px 10px;
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    top: auto;
+    border-radius: 2px;
+    z-index: 25; }
+  body.lease .photosBy a {
+    color: #000; }
+  body.lease .fullWidth {
+    max-width: 1920px;
+    margin: 0 auto 24px; }
+  body.lease .royalSlider {
+    -webkit-perspective: 500px;
+    perspective: 500px; }
+    body.lease .royalSlider .rsContent {
+      -webkit-perspective: 500px;
+      perspective: 500px; }
+  @media screen and (min-width: 0px) and (max-width: 800px) {
+    body.lease .infoBlock {
+      padding: 10px;
+      height: auto;
+      max-height: 100%;
+      min-width: 40%;
+      left: 5px;
+      top: 5px;
+      right: auto;
+      font-size: 12px; }
+    body.lease .infoBlock h3 {
+      font-size: 14px;
+      line-height: 17px; } }
+  body.lease .hexBlock {
+    margin-top: 0; }
+  body.lease .topHex {
+    margin-left: 20px; }
+  body.lease .bottomHex {
+    margin-left: 20px; }
+  body.lease #topHexBlock {
+    padding-left: 80px; }
+
+.brand.cvs a {
+  background: url(brands/1-CVS.png);
+  background-size: auto 80%; }
+
+.brand.bofa a {
+  background: url(brands/2-BOA.png);
+  background-size: auto 80%; }
+
+.brand.gnc a {
+  background: url(brands/3-GNC.png);
+  background-size: auto 80%; }
+
+.brand.company a {
+  background: url(brands/4-CS.png);
+  background-size: auto 80%; }
+
+.brand.harb-optical a {
+  background: url(brands/5-HO.png);
+  background-size: auto 80%; }
+
+.brand.newsstand a {
+  background: url(brands/6-MN.png);
+  background-size: auto 80%; }
+
+.brand.noahsark a {
+  background: url(brands/7-NAF.png);
+  background-size: auto 80%; }
+
+.brand.printfac a {
+  background: url(brands/8-PF.png);
+  background-size: auto 80%; }
+
+.brand.mtrocentral a {
+  background: url(brands/9-MCS.png);
+  background-size: auto 80%; }
+
+.brand.dryclean a {
+  background: url(brands/10-DCSRSS.png);
+  background-size: auto 80%; }
+
+.brand.enchanting a {
+  background: url(brands/11-EFWF.png);
+  background-size: auto 80%; }
+
+.brand.hertz a {
+  background: url(brands/12-HERTZ.png);
+  background-size: auto 80%; }
+
+.brand.spparking a {
+  background: url(brands/13-SP.png);
+  background-size: auto 80%; }
+
+.brand.hyatt a {
+  background: url(brands/14-HYATT.png);
+  background-size: auto 80%; }
+
+.brand.wells a {
+  background: url(brands/15-WF.png);
+  background-size: auto 80%; }
+
+.plan-form {
+  margin-left: 600px;
+  color: white; }

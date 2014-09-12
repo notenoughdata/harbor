@@ -1,0 +1,159 @@
+body.explore {
+  /*type*/ }
+  body.explore div[id^="explore-"] {
+    width: 100%;
+    color: #000; }
+  body.explore .infoBlock {
+    width: 100%;
+    padding: 120px;
+    color: #FFF; }
+  body.explore .infoBlock h1 {
+    font-family: "GoLongRegular";
+    text-transform: uppercase;
+    font-size: 120px;
+    margin: 150px 0 0 0;
+    letter-spacing: -2px;
+    font-stretch: condensed;
+    line-height: 1.2;
+    padding-bottom: 3px;
+    text-align: center; }
+  body.explore .infoBlock p {
+    font-size: 24px;
+    line-height: .9em;
+    font-weight: bold;
+    margin: 4px 0 0;
+    font-family: "Museo";
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    text-align: center; }
+  body.explore .infoBlock a {
+    color: #FFF;
+    text-decoration: underline;
+    text-align: center;
+    width: 100%; }
+  body.explore .artBlock {
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #FFF;
+    width: 100%;
+    left: 200px;
+    top: 200px;
+    max-width: 900px; }
+  body.explore h4 {
+    font-family: "GoLongRegular";
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: -1px;
+    line-height: 1.5em;
+    margin: 0px; }
+  body.explore h4 i {
+    background: url(koBG.png) repeat;
+    padding: 10px 10px 0 10px;
+    border: 1px solid #fff; }
+  body.explore .artBlock p {
+    margin-left: 10px; }
+  body.explore .artBlock p, body.explore .artBlock ul {
+    font-size: 24px;
+    line-height: 1;
+    font-family: "Museo";
+    text-transform: uppercase;
+    font-weight: bold; }
+  body.explore .artBlock a {
+    color: #28bee8;
+    text-decoration: underline; }
+    body.explore .artBlock a :hover {
+      text-decoration: underline; }
+  body.explore .listingsBlock {
+    margin: 20px 0 0 15px;
+    padding: 5px 0px 0px 10px;
+    background: url(koBG.png) repeat;
+    width: 500px;
+    border: 1px solid #fff; }
+    body.explore .listingsBlock p, body.explore .listingsBlock ul {
+      font-size: 15px;
+      line-height: 1;
+      font-family: "Museo";
+      text-transform: none; }
+    body.explore .listingsBlock p {
+      margin: 0 0 5px 0; }
+    body.explore .listingsBlock ul {
+      margin: 5px 0 10px 20px; }
+  body.explore .festivals a {
+    text-transform: uppercase; }
+  body.explore .artBlock a {
+    color: #28bee8;
+    text-decoration: underline; }
+    body.explore .artBlock a :hover {
+      text-decoration: underline; }
+  body.explore .peopleBlock {
+    width: 900px; }
+  body.explore .peopleBlock h4, body.explore .peopleBlock p {
+    text-align: right; }
+  body.explore .videoBlock {
+    margin: 20px auto;
+    padding: 0px;
+    background: url(koBG.png) repeat;
+    width: 900px;
+    border: 1px solid #fff; }
+    body.explore .videoBlock p, body.explore .videoBlock ul {
+      font-size: 15px;
+      line-height: 1;
+      font-family: "Museo";
+      text-transform: none; }
+    body.explore .videoBlock p {
+      margin: 0 0 5px 0; }
+  body.explore .videoBlockSmall {
+    width: 425px;
+    float: right;
+    margin-right: 10px; }
+  body.explore .fullWidth {
+    max-width: 1920px;
+    margin: 0 auto 24px; }
+  body.explore .royalSliderTall {
+    margin-top: -40px; }
+  @media screen and (min-width: 960px) and (min-height: 1000px) {
+    body.explore .heroSlider .rsOverflow,
+    body.explore .royalSlider.heroSlider {
+      height: 1000px !important; }
+    body.explore .royalSliderTall {
+      height: 1600px !important; } }
+  @media screen and (min-width: 0px) and (max-width: 800px) {
+    body.explore .infoBlock {
+      padding: 10px;
+      height: auto;
+      max-height: 100%;
+      min-width: 40%;
+      left: 5px;
+      top: 5px;
+      right: auto;
+      font-size: 12px; }
+    body.explore .infoBlock h3 {
+      font-size: 14px;
+      line-height: 17px; } }
+  body.explore .articleBlock {
+    height: 200px;
+    background: url(koBG.png) repeat;
+    padding: 10px 10px 0 10px;
+    border: 1px solid #fff;
+    margin-right: 25px; }
+  body.explore .articleDiv {
+    padding-top: 30px; }
+  body.explore .videoBio {
+    height: 100px;
+    background: url(koBG.png) repeat;
+    border-top: 1px solid #fff; }
+    body.explore .videoBio p {
+      font-size: 14px;
+      text-align: left; }
+  body.explore .videoBlockSmall {
+    margin-top: 20px;
+    margin-right: 50px;
+    background: url(koBG.png) repeat;
+    border: 1px solid #fff; }
+  body.explore .videoCol :first-child {
+    margin-right: 0; }
+
+.press-form {
+  margin-left: 600px;
+  color: white; }

@@ -1,0 +1,6 @@
+body.harborside div[id^="harborside-"] {
+  width: 100%;
+  color: #000; }
+body.harborside .fullWidth {
+  max-width: 1920px;
+  margin: 0 auto 24px; }

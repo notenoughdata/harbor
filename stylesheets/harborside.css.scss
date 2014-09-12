@@ -1,0 +1,17 @@
+// Place all the styles related to the harborside controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the live controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body.harborside {
+	// background-color:#000;
+	div[id^="harborside-"] {
+	  width: 100%;
+	  color: #000;
+	}
+	.fullWidth {
+	  max-width: 1920px;
+	  margin: 0 auto 24px;
+	}
+}

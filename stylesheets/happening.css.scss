@@ -1,0 +1,47 @@
+// Place all the styles related to the harborside controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the live controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body.happening {
+	// background-color:#000;
+	div[id^="happening-"] {
+	  width: 100%;
+	  color: #000;
+	}
+	.fullWidth {
+	  max-width: 1920px;
+	  margin: 0 auto 24px;
+	}
+}
+
+#happening-1 {
+  #instafeed{
+    .feed-container {
+        width: 100%;
+        ul.feed-list{
+            margin-left:0;
+            li.feed-item {
+                opacity:1;
+                -webkit-transition:all .5s ease-in;
+                transition:all .5s ease-in;
+                width:20%;
+                float:left;
+                img{
+                    width: 100%;
+                }
+                p{
+                    color:white;
+                    max-width: 200px;
+                }
+            }
+            li.feed-item.off{
+                -webkit-transition:all 1s ease-in;
+                transition:all .5s ease-in;
+                opacity:0;
+            }
+        }
+    }
+  }
+}

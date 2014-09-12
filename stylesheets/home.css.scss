@@ -1,0 +1,50 @@
+// Place all the styles related to the harborside controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the live controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body.home {
+	// background-color:#000;
+	div[id^="home-"] {
+	  width: 100%;
+	  color: #000;
+	}
+	.infoBlock {
+	  width: 100%;
+	  padding: 20px;
+	  color: #FFF;
+	}
+	.infoBlock h1 {
+		font-family: "GoLongRegular";
+		text-transform: uppercase;
+		font-size: 120px;
+		margin: 150px 0 0 0;
+	  letter-spacing: -2px;
+	  font-stretch: condensed;
+	  line-height: 1.2;
+	  padding-bottom: 3px;
+	  text-align: center;
+	}
+	.infoBlock p {
+		font-size: 24px;
+		line-height: .9em;
+		font-weight: bold;
+		margin: 4px 0 0;
+		font-family: "Museo";
+		text-transform: uppercase;
+		padding-bottom: 3px;
+		text-align: center;
+	}
+	.infoBlock a {
+	  color: #FFF;
+	  text-decoration: underline;
+	  text-align: center;
+	  width: 100%;
+	}
+
+	.fullWidth {
+	  max-width: 1920px;
+	  margin: 0 auto 24px;
+	}
+}
