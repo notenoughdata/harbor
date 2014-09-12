@@ -73,13 +73,13 @@
 		  });
 
 		//Slant Right
-	    $(".slant-right-img").imageMask("/assets/masks/mask01.png", function($canvas) {
+	    $(".slant-right-img").imageMask("masks/mask01.png", function($canvas) {
 	        console.log('imageMask successfully applied', $canvas);
 	        $('.slant-right-container .rsOverflow').css('margin-top', '-80px').parent().next().css('margin-top', '-80px');
 	    });
 
 	    //Slant Left
-	    $(".slant-left-img").imageMask("/assets/masks/mask02.png", function($canvas) {
+	    $(".slant-left-img").imageMask("masks/mask02.png", function($canvas) {
 	        $('.slant-left-container .rsOverflow').css('margin-top', '-80px').parent().next().css('margin-top', '-80px');
 	        $($canvas).attr({
 	        	'data-bottom-top':'transform:translate3d(0,-50vh,0)',

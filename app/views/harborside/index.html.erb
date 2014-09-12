@@ -76,13 +76,13 @@
 <!-- this is what you need to replicate for trapezoidal imageMask in ohter sections -->
 
     <script type="text/javascript">
-    	$(".slant-right-img").imageMask("/assets/masks/mask01.png", function($canvas) {
+    	$(".slant-right-img").imageMask("assets/mask01.png", function($canvas) {
 	        $('.slant-right-container .rsOverflow').css('margin-top', '-80px').parent().next().css('margin-top', '-80px');
 
 	    });
 
 	    //Slant Left
-	    $(".slant-left-img").imageMask("/assets/masks/mask02.png", function($canvas) {
+	    $(".slant-left-img").imageMask("assets/mask02.png", function($canvas) {
 	        $('.slant-left-container .rsOverflow').css('margin-top', '-80px').parent().next().css('margin-top', '-80px');
 	    });
 	    setTimeout(function(){
