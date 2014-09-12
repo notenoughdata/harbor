@@ -25,6 +25,17 @@ class LeaseController < ApplicationController
   end
 
   def plans
+    @plan = Plan.new
   end
+
+  def create 
+    plan = params[:plans]
+
+    @plan = Plan.create_from(plan)
+    @plan.save
+
+    redirect_to controller: :lease, action: :index
+  end
+
 
 end

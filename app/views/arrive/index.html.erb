@@ -2,70 +2,59 @@
 
 	<div id="arrive-0" class="royalSlider heroSlider rsMinW slider00">
 		<div class="rsContent rsNoDrag">
-	  		<%= image_tag "full-width/arrive-0.jpg", :class=>"rsImg" %>
+	  		<%= image_tag "full-width/arrive-0.jpg", :class=>"rsImg", 'data-bottom-top'=>'transform:translate3d(0,-50vh,0)','data-top-bottom'=>'transform:translate3d(0,50vh,0)' %>
 	    </div>
 	</div>
-	<div id="arrive-1" class="royalSlider heroSlider rsMinW slider01">
+	<div id="arrive-1" class="royalSlider heroSlider rsMinW slider01 slant-right-container">
 		<div class="rsContent rsNoDrag" id="Overview">
-	  		<%= image_tag "full-width/arrive-1.jpg", :class=>"rsImg mySelector" %>
+	  		<%= image_tag "full-width/arrive-1.jpg", :class=>"rsImg slant-right-img" %>
 	    </div>
 	</div>
-	<div id="arrive-2" class="royalSlider heroSlider rsMinW slider02">
+	<div id="arrive-2" class="royalSlider heroSlider rsMinW slider02 slant-left-container">
 		<div class="rsContent rsNoDrag" id="Modes">
-	  		<%= image_tag "full-width/arrive-2.jpg", :class=>"rsImg mySelector1" %>
+	  		<%= image_tag "full-width/arrive-2.jpg", :class=>"rsImg slant-left-img" %>
 		</div>
 	</div>
-	<div id="arrive-3" class="royalSlider heroSlider rsMinW slider03">
-		<div class="rsContent rsNoDrag" id="Trip">
 
-	<!-- <div id="arrive-3" class="royalSlider heroSlider rsMinW slider03">
-		<div class="rsContent rsNoDrag">
-	  		<%= image_tag "full-width/arrive-3.jpg", :class=>"rsImg mySelector" %>
-		</div>
-	</div>
--->
 
-	<div id="map-canvas"/> </div>
 
+	<div id="map-canvas"/></div>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=">
+    </script>
 </body>
 
 	<script type="text/javascript">
-	jQuery(document).ready(function($) {
-	  $('.royalSlider').royalSlider({
-	    arrowsNav: true,
-	    loop: false,
-	    keyboardNavEnabled: true,
-	    controlsInside: false,
-	    imageScaleMode: 'fill',
-	    arrowsNavAutoHide: false,
-	    autoScaleSlider: true, 
-	    autoScaleSliderWidth: 1920,     
-	    autoScaleSliderHeight: 1400,
-		slidesSpacing: 0,
-	    controlNavigation: 'bullets',
-	    thumbsFitInViewport: false,
-	    navigateByClick: true,
-	    startSlideId: 0,
-	    autoPlay: false,
-	    transitionType:'move',
-	    globalCaption: false,
-	    hasDrag: false,
-	    deeplinking: {
-	      enabled: true,
-	      change: false
-	    },
-	    /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
-	    imgWidth: 1920,
-	    imgHeight: 1400
-	  });
-	});
-	</script>
+	   $(document).ready(function($) {
 
-	<script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=">
-    </script>
+        $('.royalSlider').royalSlider({
+            arrowsNav: true,
+            loop: false,
+            keyboardNavEnabled: true,
+            controlsInside: false,
+            imageScaleMode: 'fill',
+            arrowsNavAutoHide: false,
+            autoScaleSlider: true,
+            autoScaleSliderWidth: 1920,
+            autoScaleSliderHeight: 1400,
+            slidesSpacing: 0,
+            controlNavigation: 'bullets',
+            thumbsFitInViewport: false,
+            navigateByClick: true,
+            startSlideId: 0,
+            autoPlay: false,
+            transitionType:'move',
+            globalCaption: false,
+            hasDrag: false,
+            deeplinking: {
+              enabled: true,
+              change: false
+            },
+            /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
+            imgWidth: 1920,
+            imgHeight: 1400
+          });
 
-    <script type="text/javascript">
       function initialize() {
         var mapOptions = {
           center: new google.maps.LatLng(40.7174704, -74.0235612),
@@ -75,24 +64,36 @@
         var map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
       }
+
       google.maps.event.addDomListener(window, 'load', initialize);
+      //Slant Right
+        $(".slant-right-img").imageMask("/assets/masks/mask01.png", function($canvas) {
+            console.log('imageMask successfully applied', $canvas);
+            $('.slant-right-container .rsOverflow').css('margin-top', '-80px').parent().next().css('margin-top', '-80px');
+        });
+
+        //Slant Left
+        $(".slant-left-img").imageMask("/assets/masks/mask02.png", function($canvas) {
+            $('.slant-left-container .rsOverflow').css('margin-top', '-80px').parent().next().css('margin-top', '-80px');
+        });
+
+        //Skrollr
+        setTimeout(function(){
+            //s.refresh();
+            s = skrollr.init({
+                constants: {
+                    vh : '100p'
+                },
+                smoothScrolling: true,
+                edgeStrategy: 'set',
+                forceHeight: false,
+                easing: {
+                    vibrate: function(p) {
+                        return Math.sin(p * 10 * Math.PI);
+                    }
+                }
+            });
+        },100)
+    });
     </script>
 
-<!-- this is what you need to replicate for trapezoidal imageMask in ohter sections -->
-
-    <script type="text/javascript">
-        $( document ).ready( function() {
-            $( ".mySelector" ).imageMask( "/assets/masks/mask01.png", function( $canvas ) {
-                console.log( 'imageMask successfully applied', $canvas );
-            } );
-        } );
-    </script>
-
-     <script type="text/javascript">
-        $( document ).ready( function() {
-            $( ".mySelector1" ).imageMask( "/assets/masks/mask02.png", function( $canvas ) {
-                console.log( 'imageMask successfully applied', $canvas );
-            } );
-        } );
-    </script>
- 

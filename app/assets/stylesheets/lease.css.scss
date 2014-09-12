@@ -24,12 +24,16 @@ top:160px;
 max-width: 497px;
 }
 h4 {
+	font-weight:normal;
 	font-family: "GoLongRegular";
 	text-transform: uppercase;
-	font-size: 98px;
+	font-size: 101px;
 	letter-spacing: -1px;
 	line-height: 1.5em;
 	margin:0px;
+	span.underline{
+		border-bottom:15px solid white;
+	}
 }
 /*type*/
 h4 i {
@@ -151,6 +155,7 @@ padding: 20px;
 		}
 	}
 	ul.brands{
+		margin-left:0;
 		list-style-type: none;
 		width:100%;
 		li.brand{
@@ -158,9 +163,12 @@ padding: 20px;
 			height: 100px;
 			float:left;
 			a{
+				background-position:center center;
+				background-repeat:no-repeat;
+				border:1px solid white;
 				width: 90%;
 				height: 90%;
-				background-color:rgba(0,0,0,.8);
+				background-color:rgba(0,0,0,.6);
 				display:block;
 			}
 		}
@@ -219,23 +227,16 @@ right: auto;
 	max-width: 1920px;
 	margin: 0 auto 24px;
 }
-@media screen and (min-width:960px) and (min-height:660px) {
-	.heroSlider .rsOverflow,
-	.royalSlider.heroSlider {
-		height: 100vh !important;
+.royalSlider {
+		-webkit-perspective: 500px;
+		perspective: 500px;
+		.rsContent{
+			-webkit-perspective: 500px;
+		perspective: 500px;
+		}
 	}
-}
-@media screen and (min-width:960px) and (min-height:1000px) {
-	.heroSlider .rsOverflow,
-	.royalSlider.heroSlider {
-		height: 100vh !important;
-	}
-}
+
 @media screen and (min-width: 0px) and (max-width: 800px) {
-	.royalSlider.heroSlider,
-	.royalSlider.heroSlider .rsOverflow {
-		height: 700px !important;
-	}
 	.infoBlock {
 		padding: 10px;
 		height: auto;
@@ -267,3 +268,115 @@ right: auto;
 	padding-left: 80px;
 }
 }
+
+.brand.cvs{
+	a{
+		background: url(brands/1-CVS.png);
+		background-size:auto 80%;
+	}
+
+}
+.brand.bofa{
+	a{
+		background: url(brands/2-BOA.png);
+		background-size:auto 80%;
+	}
+
+}
+.brand.gnc{
+	a{
+		background: url(brands/3-GNC.png);
+		background-size:auto 80%;
+	}
+
+}
+.brand.company{
+	a{
+		background: url(brands/4-CS.png);
+		background-size:auto 80%;
+	}
+
+}
+.brand.harb-optical{
+	a{
+		background: url(brands/5-HO.png);
+		background-size:auto 80%;
+	}
+
+}
+.brand.newsstand{
+	a{
+		background: url(brands/6-MN.png);
+		background-size:auto 80%;
+	}
+
+}
+.brand.noahsark{
+	a{
+		background: url(brands/7-NAF.png);
+		background-size:auto 80%;
+	}
+
+}
+.brand.printfac{
+	a{
+		background: url(brands/8-PF.png);
+		background-size:auto 80%;
+	}
+
+}
+.brand.mtrocentral{
+	a{
+		background: url(brands/9-MCS.png);
+		background-size:auto 80%;
+	}
+
+}
+.brand.dryclean{
+	a{
+		background: url(brands/10-DCSRSS.png);
+		background-size:auto 80%;
+	}
+
+}
+.brand.enchanting{
+	a{
+		background: url(brands/11-EFWF.png);
+		background-size:auto 80%;
+	}
+
+}
+.brand.hertz{
+	a{
+		background: url(brands/12-HERTZ.png);
+		background-size:auto 80%;
+	}
+
+}
+.brand.spparking{
+	a{
+		background: url(brands/13-SP.png);
+		background-size:auto 80%;
+	}
+
+}
+.brand.hyatt{
+	a{
+		background: url(brands/14-HYATT.png);
+		background-size:auto 80%;
+	}
+
+}
+.brand.wells{
+	a{
+		background: url(brands/15-WF.png);
+		background-size:auto 80%;
+	}
+
+}
+
+.plan-form {
+	margin-left: 600px;
+	color: white;
+}
+

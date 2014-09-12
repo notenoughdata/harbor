@@ -7,13 +7,15 @@ gem 'rails', '4.0.2'
 gem 'uglifier', '>= 1.3.0'
 
 gem 'jquery-rails'
-gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+
+
 gem 'simple_form'
+gem 'paperclip'
+gem 'protected_attributes'
 
 
-# gem 'shareable'
-# gem 'social-share-button'
+gem 'devise'
 
 
 gem 'bootstrap-sass', '~> 3.0.3.0'
@@ -36,5 +38,5 @@ end
 
 group :production do
   gem 'rails_12factor'
-  gem 'sqlite3'
+  gem 'mysql'
 end

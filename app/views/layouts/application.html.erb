@@ -3,8 +3,8 @@
 <head>
   <title>Harborside</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 
@@ -23,7 +23,7 @@
       <ul class="nav navbar-nav">
         <li class="brand"><a class="navbar-brand"><%= link_to image_tag("harborside.png"), root_path %></a></li>
         <li class="dropdown top-nav">
-          <%= link_to "Explore", explore_index_path %>
+          <%= link_to "Explore", explore_index_path, 'data-page'=>'explore' %>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Explore Now", explore_index_path %></li>
             <li class="dropdown-menu-item"><%= link_to "Art",explore_index_path(:anchor => "Art") %></li>
@@ -34,7 +34,7 @@
           </ul>
         </li>
         <li class="dropdown top-nav">
-          <%= link_to "Happening", happening_index_path %>
+          <%= link_to "Happening", happening_index_path, 'data-page'=>'happening' %>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Happening Now", happening_index_path %></li>
             <li class="dropdown-menu-item"><%= link_to "Event Calendar", happening_index_path(:anchor => "Event") %></li>
@@ -44,7 +44,7 @@
         </li>
         <li class="top-nav" ><%= link_to "Harborside Now", harborside_index_path %></li>
         <li class="dropdown top-nav">
-          <%= link_to "Live", live_index_path %>
+          <%= link_to "Live", live_index_path, 'data-page'=>'live' %>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Live Now", live_index_path %></li>
             <li class="dropdown-menu-item"><%= link_to "URL®", live_index_path(:anchor => "URL") %></li>
@@ -52,7 +52,7 @@
           </ul>
         </li>
         <li class="dropdown top-nav">
-          <%= link_to "Arrive", arrive_index_path %>
+          <%= link_to "Arrive", arrive_index_path, 'data-page'=>'arrive' %>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Arrive Now", arrive_index_path %></li>
             <li class="dropdown-menu-item"><%= link_to "Overview", arrive_index_path(:anchor => "Overview") %></li>
@@ -61,7 +61,7 @@
           </ul>
         </li>
         <li class="dropdown top-nav">
-          <%= link_to "Lease", lease_index_path %>
+          <%= link_to "Lease", lease_index_path, 'data-page'=>'lease' %>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-menu-item"><%= link_to "Lease Now", lease_index_path %></li>
             <li class="dropdown-menu-item"><%= link_to "Office", lease_index_path(:anchor => "Office") %></li>
@@ -74,7 +74,7 @@
             <li class="dropdown-menu-item"><%= link_to "Plans/Tools", lease_index_path(:anchor => "Plans") %></li>
           </ul>
         </li>
-        <li class="top-nav"><%= link_to "Contact", contact_index_path %></li>
+        <li class="top-nav"><%= link_to "Contact", contact_index_path, 'data-page'=>'contact' %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
@@ -123,7 +123,6 @@
           </ul>
           <ul class="footer">
             <li class="first"><%= link_to "Lease", lease_index_path %></li>
-            <li><%= link_to "Office", lease_office_path %></li>
             <li><%= link_to "Office", lease_index_path(:anchor => "Office") %></li>
             <li><%= link_to "Retail", lease_index_path(:anchor => "Lease#Retail") %></li>
             <li><%= link_to "Amenities", lease_index_path(:anchor => "Amenities") %></li>
@@ -158,6 +157,8 @@
     </div>
   </footer>
   <script>
+    var a = location.pathname.split("/");
+    $('[data-page="'+a[1]+'"]').parent().addClass('current');
 
      $('.dropdown').mouseenter(function(){
       $(this).addClass('open');

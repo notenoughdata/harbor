@@ -1,0 +1,20 @@
+<body class="new-press">
+  <div class="press-form">
+<%= simple_form_for (Press.new), :url => url_for(:action => 'create', :controller => 'explore')  do |f| %>
+    <%= f.input :url %>
+    <%= f.input :image %>
+    <%= f.input :headline %>
+
+<%= f.submit %>
+<% end %>
+</div>
+
+
+
+
+
+
+
+
+
+</body>

@@ -6,8 +6,12 @@
 	  </div>
 	</div>
 	<div id="happening-1" class="royalSlider heroSlider rsMinW slider01">
-		<div class="rsContent rsNoDrag" id="Instagram">
-	  		<%= image_tag "full-width/happening-1.jpg", :class=>"rsImg mySelector" %>
+		<div class="rsContent rsNoDrag" id="instafeed">
+	  		<div class="feed-container">
+	  			<ul class="feed-list">
+
+	  			</ul>
+	  		</div>
 	  </div>
 	</div>
 	<div id="happening-2" class="royalSlider heroSlider rsMinW slider02">
@@ -30,8 +34,8 @@
 	    controlsInside: false,
 	    imageScaleMode: 'fill',
 	    arrowsNavAutoHide: false,
-	    autoScaleSlider: true, 
-	    autoScaleSliderWidth: 1920,     
+	    autoScaleSlider: true,
+	    autoScaleSliderWidth: 1920,
 	    autoScaleSliderHeight: 1400,
 		slidesSpacing: 0,
 	    controlNavigation: 'bullets',
@@ -50,24 +54,39 @@
 	    imgWidth: 1920,
 	    imgHeight: 1400
 	  });
+
+	  function constructor (item){
+	  	var el = document.createElement('li')
+	  	var img = document.createElement('img')
+	  	img.setAttribute('src',item.images.standard_resolution.url)
+
+	  	el.classList.add('feed-item');
+	  	el.classList.add('off');
+	  	el.appendChild(img);
+
+	  	$('.feed-list').append(el);
+
+	  	setTimeout(function(){
+	  		el.classList.remove('off');
+	  	},Math.floor((Math.random() * 1000) + 500));
+	  }
+
+	  var feed = new Instafeed({
+
+        	get: 'tagged',
+        	tagName: 'bikini',
+        	resolution: 'low-resolution',
+        	clientId: '71d0d1d3306e4fe685254167cd84cd14',
+        	success:function(data){
+        		var items = data.data;
+        		for(var i=0;i<items.length;i++){
+        			constructor(items[i]);
+        		}
+        	},
+        	error:function(error){
+        		console.log(error);
+        	}
+    	});
+    	feed.run();
 	});
 	</script>
-
-<!-- this is what you need to replicate for trapezoidal imageMask in ohter sections -->
-
-    <script type="text/javascript">
-        $( document ).ready( function() {
-            $( ".mySelector" ).imageMask( "/assets/masks/mask01.png", function( $canvas ) {
-                console.log( 'imageMask successfully applied', $canvas );
-            } );
-        } );
-    </script>
-
-     <script type="text/javascript">
-        $( document ).ready( function() {
-            $( ".mySelector1" ).imageMask( "/assets/masks/mask02.png", function( $canvas ) {
-                console.log( 'imageMask successfully applied', $canvas );
-            } );
-        } );
-    </script>
- 

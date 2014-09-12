@@ -2,90 +2,120 @@
 
 	<div id="live-0" class="royalSlider heroSlider rsMinW slider00">
 		<div class="rsContent rsNoDrag">
-	  		<%= image_tag "full-width/live-0.jpg", :class=>"rsImg" %>
+	  		<%= image_tag "full-width/live-0.jpg", :class=>"rsImg", 'data-bottom-top'=>'transform:translate3d(0,-50vh,0)','data-top-bottom'=>'transform:translate3d(0,50vh,0)' %>
 	    </div>
 	</div>
-	<div id="live-1" class="royalSlider heroSlider rsMinW slider01">
+	<div id="live-1" class="royalSlider heroSlider rsMinW slider01 slant-right-container">
 		<div class="rsContent rsNoDrag">
-	  		<%= image_tag "full-width/live-1.jpg", :class=>"rsImg mySelector" %>
+	  		<%= image_tag "full-width/live-1.jpg", :class=>"rsImg slant-right-img" %>
 	    </div>
 	</div>
 	<div id="live-2" class="royalSlider heroSlider rsMinW slider02">
 		<div class="rsContent" id="URL">
-	  		<%= image_tag "full-width/live-2-01.jpg", :class=>"rsImg mySelector1" %>
+	  		<%= image_tag "full-width/live-2-01.jpg", :class=>"rsImg mySelector1", 'data-bottom-top'=>'transform:translate3d(0,-50vh,0)','data-top-bottom'=>'transform:translate3d(0,50vh,0)' %>
 		</div>
 		<div class="rsContent">
-			<%= image_tag "full-width/live-2-02.jpg", :class=>"rsImg mySelector" %>
+			<%= image_tag "full-width/live-2-02.jpg", :class=>"rsImg mySelector", 'data-bottom-top'=>'transform:translate3d(0,-50vh,0)','data-top-bottom'=>'transform:translate3d(0,50vh,0)' %>
 		</div>
 		<div class="rsContent">
-	  		<%= image_tag "full-width/live-2-03.jpg", :class=>"rsImg mySelector1" %>
+	  		<%= image_tag "full-width/live-2-03.jpg", :class=>"rsImg mySelector1", 'data-bottom-top'=>'transform:translate3d(0,-50vh,0)','data-top-bottom'=>'transform:translate3d(0,50vh,0)' %>
 	  	</div>
 	  	<div class="rsContent">
-	  		<%= image_tag "full-width/live-2-04.jpg", :class=>"rsImg mySelector" %>
+	  		<%= image_tag "full-width/live-2-04.jpg", :class=>"rsImg mySelector", 'data-bottom-top'=>'transform:translate3d(0,-50vh,0)','data-top-bottom'=>'transform:translate3d(0,50vh,0)' %>
 	  	</div>
 	  	<div class="rsContent">
-	  		<%= image_tag "full-width/live-2-05.jpg", :class=>"rsImg mySelector1" %>
+	  		<%= image_tag "full-width/live-2-05.jpg", :class=>"rsImg mySelector1", 'data-bottom-top'=>'transform:translate3d(0,-50vh,0)','data-top-bottom'=>'transform:translate3d(0,50vh,0)' %>
 	  	</div>
 	</div>
-	<div id="live-3" class="royalSlider heroSlider rsMinW slider03">
+	<div id="live-3" class="royalSlider heroSlider rsMinW slider03 slant-right-container slant-left-container">
 		<div class="rsContent" id="Retail">
-	  		<%= image_tag "full-width/live-3-01.jpg", :class=>"rsImg mySelector" %>
+	  		<%= image_tag "full-width/live-3-01.jpg", :class=>"rsImg slant-right-img", 'data-bottom-top'=>'transform:translate3d(0,-50vh,0)','data-top-bottom'=>'transform:translate3d(0,50vh,0)' %>
 		</div>
 		<div class="rsContent">
-			<%= image_tag "full-width/live-3-02.jpg", :class=>"rsImg mySelector mySelector1" %>
+			<%= image_tag "full-width/live-3-02.jpg", :class=>"rsImg slant-left-img", 'data-bottom-top'=>'transform:translate3d(0,-50vh,0)','data-top-bottom'=>'transform:translate3d(0,50vh,0)' %>
 		</div>
 		<div class="rsContent">
-	  		<%= image_tag "full-width/live-3-03.jpg", :class=>"rsImg mySelector" %>
+	  		<%= image_tag "full-width/live-3-03.jpg", :class=>"rsImg slant-right-img", 'data-bottom-top'=>'transform:translate3d(0,-50vh,0)','data-top-bottom'=>'transform:translate3d(0,50vh,0)' %>
 	  	</div>
 	</div>
+
 
 	<script type="text/javascript">
-	jQuery(document).ready(function($) {
+
+	$(document).ready(function() {
+		var s;
 	  $('.royalSlider').royalSlider({
-	    arrowsNav: true,
-	    loop: false,
-	    keyboardNavEnabled: true,
-	    controlsInside: false,
-	    imageScaleMode: 'fill',
-	    arrowsNavAutoHide: false,
-	    autoScaleSlider: true, 
-	    autoScaleSliderWidth: 1920,     
-	    autoScaleSliderHeight: 1400,
-		slidesSpacing: 0,
-	    controlNavigation: 'bullets',
-	    thumbsFitInViewport: false,
-	    navigateByClick: true,
-	    startSlideId: 0,
-	    autoPlay: false,
-	    transitionType:'move',
-	    globalCaption: false,
-	    hasDrag: false,
-	    deeplinking: {
-	      enabled: true,
-	      change: false
-	    },
-	    /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
-	    imgWidth: 1920,
-	    imgHeight: 1400
-	  });
+		    arrowsNav: true,
+		    loop: false,
+		    keyboardNavEnabled: true,
+		    controlsInside: false,
+		    imageScaleMode: 'fill',
+		    arrowsNavAutoHide: false,
+		    autoScaleSlider: true,
+		    autoScaleSliderWidth: 1920,
+		    autoScaleSliderHeight: 1400,
+			slidesSpacing: 0,
+		    controlNavigation: 'bullets',
+		    thumbsFitInViewport: false,
+		    navigateByClick: true,
+		    startSlideId: 0,
+		    autoPlay: false,
+		    transitionType:'move',
+		    globalCaption: false,
+		    hasDrag: false,
+		    deeplinking: {
+		      enabled: true,
+		      change: false
+		    },
+		    /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
+		    imgWidth: 1920,
+		    imgHeight: 1400
+		  });
+
+		//Slant Right
+	    $(".slant-right-img").imageMask("/assets/masks/mask01.png", function($canvas) {
+	        console.log('imageMask successfully applied', $canvas);
+	        $('.slant-right-container .rsOverflow').css('margin-top', '-80px').parent().next().css('margin-top', '-80px');
+	    });
+
+	    //Slant Left
+	    $(".slant-left-img").imageMask("/assets/masks/mask02.png", function($canvas) {
+	        $('.slant-left-container .rsOverflow').css('margin-top', '-80px').parent().next().css('margin-top', '-80px');
+	        $($canvas).attr({
+	        	'data-bottom-top':'transform:translate3d(0,-50vh,0)',
+	        	'data-top-bottom':'transform:translate3d(0,50vh,0)'
+	        });
+	        s = skrollr.init({
+	        	constants: {
+	        		vh : '100p'
+	        	},
+	            smoothScrolling: true,
+	            edgeStrategy: 'set',
+	            forceHeight: false,
+	            easing: {
+	                vibrate: function(p) {
+	                    return Math.sin(p * 10 * Math.PI);
+	                }
+	            }
+	        });
+	    });
+
+	    //Skrollr
+	    setTimeout(function(){
+	        //s.refresh();
+	        s = skrollr.init({
+	        	constants: {
+	        		vh : '100p'
+	        	},
+	            smoothScrolling: true,
+	            edgeStrategy: 'set',
+	            forceHeight: false,
+	            easing: {
+	                vibrate: function(p) {
+	                    return Math.sin(p * 10 * Math.PI);
+	                }
+	            }
+	        });
+	    },100)
 	});
-	</script>
-
-<!-- this is what you need to replicate for trapezoidal imageMask in ohter sections -->
-
-    <script type="text/javascript">
-        $( document ).ready( function() {
-            $( ".mySelector" ).imageMask( "/assets/masks/mask01.png", function( $canvas ) {
-                console.log( 'imageMask successfully applied', $canvas );
-            } );
-        } );
-    </script>
-
-     <script type="text/javascript">
-        $( document ).ready( function() {
-            $( ".mySelector1" ).imageMask( "/assets/masks/mask02.png", function( $canvas ) {
-                console.log( 'imageMask successfully applied', $canvas );
-            } );
-        } );
-    </script>
- 
+</script>

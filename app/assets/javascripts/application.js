@@ -11,19 +11,22 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap
+
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require video-js.js
+//= require bootstrap
 //= require jquery.royalslider.js
 //= require skrollr.min.js
 //= require jquery.imageMask.js
 //= require jquery.easing.1.3.js
+//= require instafeed.js
 //= require parallax.js
+
+//= require_self
+//= require_tree .
 
 
 (function ($, window, document, undefined)
 {
-
 
 })(jQuery, window, document);

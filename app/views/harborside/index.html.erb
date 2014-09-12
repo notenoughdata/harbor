@@ -5,39 +5,39 @@
 	  		<%= image_tag "full-width/harborside-0.jpg", :class=>"rsImg" %>
 	    </div>
 	</div>
-	<div id="harborside-1" class="royalSlider heroSlider rsMinW slider01">
+	<div id="harborside-1" class="royalSlider heroSlider rsMinW slider01 slant-right-container">
 		<div class="rsContent rsNoDrag">
-	  		<%= image_tag "full-width/harborside-1.jpg", :class=>"rsImg mySelector" %>
+	  		<%= image_tag "full-width/harborside-1.jpg", :class=>"rsImg slant-right-img" %>
 	    </div>
 	</div>
-	<div id="harborside-2" class="royalSlider heroSlider rsMinW slider02">
+	<div id="harborside-2" class="royalSlider heroSlider rsMinW slider02 slant-left-container">
 		<div class="rsContentrs NoDrag">
-	  		<%= image_tag "full-width/harborside-2.jpg", :class=>"rsImg mySelector1" %>
+	  		<%= image_tag "full-width/harborside-2.jpg", :class=>"rsImg slant-left-img" %>
 		</div>
 	</div>
-	<div id="harborside-3" class="royalSlider heroSlider rsMinW slider03">
+	<div id="harborside-3" class="royalSlider heroSlider rsMinW slider03 slant-right-container">
 		<div class="rsContentrs NoDrag">
-	  		<%= image_tag "full-width/harborside-3.jpg", :class=>"rsImg mySelector" %>
+	  		<%= image_tag "full-width/harborside-3.jpg", :class=>"rsImg slant-right-img" %>
 		</div>
 	</div>
-	<div id="harborside-4" class="royalSlider heroSlider rsMinW slider04">
+	<div id="harborside-4" class="royalSlider heroSlider rsMinW slider04 slant-left-container">
 		<div class="rsContentrs NoDrag">
-	  		<%= image_tag "full-width/harborside-4.jpg", :class=>"rsImg mySelector1" %>
+	  		<%= image_tag "full-width/harborside-4.jpg", :class=>"rsImg slant-left-img" %>
 		</div>
 	</div>
-	<div id="harborside-5" class="royalSlider heroSlider rsMinW slider05">
+	<div id="harborside-5" class="royalSlider heroSlider rsMinW slider05 slant-right-container">
 		<div class="rsContentrs NoDrag">
-	  		<%= image_tag "full-width/harborside-5.jpg", :class=>"rsImg mySelector" %>
+	  		<%= image_tag "full-width/harborside-5.jpg", :class=>"rsImg slant-right-img" %>
 		</div>
 	</div>
-	<div id="harborside-6" class="royalSlider heroSlider rsMinW slider06">
+	<div id="harborside-6" class="royalSlider heroSlider rsMinW slider06 slant-left-container">
 		<div class="rsContentrs NoDrag">
-	  		<%= image_tag "full-width/harborside-6.jpg", :class=>"rsImg mySelector1" %>
+	  		<%= image_tag "full-width/harborside-6.jpg", :class=>"rsImg slant-left-img" %>
 		</div>
 	</div>
-	<div id="harborside-7" class="royalSlider heroSlider rsMinW slider07">
+	<div id="harborside-7" class="royalSlider heroSlider rsMinW slider07 slant-right-container">
 		<div class="rsContentrs NoDrag">
-	  		<%= image_tag "full-width/harborside-7.jpg", :class=>"rsImg mySelector" %>
+	  		<%= image_tag "full-width/harborside-7.jpg", :class=>"rsImg slant-right-img" %>
 		</div>
 	</div>
 
@@ -50,8 +50,8 @@
 	    controlsInside: false,
 	    imageScaleMode: 'fill',
 	    arrowsNavAutoHide: false,
-	    autoScaleSlider: true, 
-	    autoScaleSliderWidth: 1920,     
+	    autoScaleSlider: true,
+	    autoScaleSliderWidth: 1920,
 	    autoScaleSliderHeight: 1400,
 		slidesSpacing: 0,
 	    controlNavigation: 'bullets',
@@ -76,18 +76,17 @@
 <!-- this is what you need to replicate for trapezoidal imageMask in ohter sections -->
 
     <script type="text/javascript">
-        $( document ).ready( function() {
-            $( ".mySelector" ).imageMask( "/assets/masks/mask01.png", function( $canvas ) {
-                console.log( 'imageMask successfully applied', $canvas );
-            } );
-        } );
-    </script>
+    	$(".slant-right-img").imageMask("/assets/masks/mask01.png", function($canvas) {
+	        $('.slant-right-container .rsOverflow').css('margin-top', '-80px').parent().next().css('margin-top', '-80px');
 
-     <script type="text/javascript">
-        $( document ).ready( function() {
-            $( ".mySelector1" ).imageMask( "/assets/masks/mask02.png", function( $canvas ) {
-                console.log( 'imageMask successfully applied', $canvas );
-            } );
-        } );
+	    });
+
+	    //Slant Left
+	    $(".slant-left-img").imageMask("/assets/masks/mask02.png", function($canvas) {
+	        $('.slant-left-container .rsOverflow').css('margin-top', '-80px').parent().next().css('margin-top', '-80px');
+	    });
+	    setTimeout(function(){
+	    	$('footer').css('margin-top','-80px');
+	    },10)
+
     </script>
- 
